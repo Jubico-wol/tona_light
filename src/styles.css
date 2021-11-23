@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.bg-tona{
+    min-height: 100vh;
+    background: rgb(0,123,193);
+    background: linear-gradient(90deg, rgba(0,123,193,1) 0%, rgba(43,117,185,1) 0%, rgba(3,0,43,1) 100%);
+  }
+  .white{
+      color: white;
+  }
+  .btn {
+      background-color: #E49A04 !important;
+  }
+  .pointer{
+      cursor: pointer;
+  }
+  .center{
+      text-align: center;
+  }
+
+
+  .card{
+    background-color: #fff0 !important;
+    border: 2px solid rgb(255 255 255) !important;
+    border-radius: 35px !important;
+  }

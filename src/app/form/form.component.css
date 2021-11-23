@@ -1,0 +1,45 @@
+.img-pos{
+    position:relative;
+    left: -155px;
+    z-index:1;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pos{
+    position: relative;
+    top: -300px;
+}
+
+.card-body {
+    padding: 1rem 4rem;
+}
+
+@media (max-width: 1024px)
+and (max-height: 1366px) {
+    .hiddenVm{
+        display: block;
+    }
+    
+}
+
+
+@media (max-width: 1024px){
+    .pos{
+        position: relative;
+        top: 0;
+    }
+
+    .card-body {
+        padding: 1rem 1rem;
+    }
+    
+    .hiddenVm{
+        display: none;
+    }
+}
