@@ -18,6 +18,9 @@ import { InfoComponent } from './info/info.component';
 import { FormComponent } from './form/form.component';
 import { HeaderInfoComponent } from './header-info/header-info.component';
 import { FooterInfoComponent } from './footer-info/footer-info.component';
+import { ModalFormComponent } from './modal-form/modal-form.component';
+import { HeaderFormComponent } from './header-form/header-form.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { FooterInfoComponent } from './footer-info/footer-info.component';
     InfoComponent,
     FormComponent,
     HeaderInfoComponent,
-    FooterInfoComponent
+    FooterInfoComponent,
+    ModalFormComponent,
+    HeaderFormComponent
   ],
   imports: [
     BrowserModule,

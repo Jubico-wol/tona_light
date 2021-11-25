@@ -1,6 +1,6 @@
 .padding{ padding: 5%;}
 .social{ max-width: 50px;}
-
+.m-width{ max-width: 400px; }
 .img:hover{transform: translateY(0) scale(1.2);}
 
 /*==================*/

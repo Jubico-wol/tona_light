@@ -1,8 +1,4 @@
-.img-pos{
-    position:relative;
-    left: -155px;
-    z-index:1;
-}
+
 
 .flex{
     display: flex;
@@ -17,7 +13,7 @@
 }
 
 .card-body {
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
 }
 
 @media (max-width: 1024px)

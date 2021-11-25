@@ -10,9 +10,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .white{
       color: white;
   }
-  .btn {
+  .bg-red{ background: red;}
+
+  .btn.btn-tona {
       background-color: #E49A04 !important;
+      min-width: 200px;
+      border-radius: 25px;
   }
+  .btn.btn-step {
+    background-color: #E49A04 !important;
+    width: 100%;
+    border-radius: 25px;
+}
   .pointer{
       cursor: pointer;
   }
@@ -20,9 +29,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
       text-align: center;
   }
 
+  .font-12{
+      font-size: 12px;
+  }
 
   .card{
     background-color: #fff0 !important;
     border: 2px solid rgb(255 255 255) !important;
     border-radius: 35px !important;
+  }
+
+  .flex{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
   }

@@ -3,7 +3,7 @@ import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalComponent} from '../modal/modal.component';
-import { NgStyle } from '@angular/common';
+
 
 @Component({
   selector: 'app-home',

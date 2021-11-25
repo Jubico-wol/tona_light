@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
-
+import { Router } from '@angular/router';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ModalFormComponent } from '../modal-form/modal-form.component';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -19,12 +21,13 @@ export class FormComponent implements OnInit {
   private onlyNumbers: any = /[0-9\+\-\ ]/;
 
 
-  get Nombre()    { return this.contactForm.get('Nombre'); } 
+  get Nombre()    { return this.contactForm.get('Nombre') as FormControl; } 
   get Apellido()  { return this.contactForm.get('Apellido'); }
-  get Email()     { return this.contactForm.get('Email'); }
-  get CUI()       { return this.contactForm.get('CUI'); }
-  get telefono()  { return this.contactForm.get('telefono'); }
-  get Direccion() { return this.contactForm.get('Direccion'); }
+  get Email()     { return this.contactForm.get('Email') as FormControl; }
+  get telefono()  { return this.contactForm.get('telefono') as FormControl; }
+  get CUI()       { return this.contactForm.get('CUI') as FormControl; }
+
+
 
 
   createForm() {
@@ -34,12 +37,28 @@ export class FormComponent implements OnInit {
       Email:      new FormControl('', [Validators.required, Validators.minLength(5), Validators.pattern(this.emailPattern)]),
       CUI:        new FormControl('', [Validators.required, Validators.minLength(14), CuiValidator.validarCedula]),
       telefono:   new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(8), Validators.pattern(this.onlyNumbers)]),
-      Direccion:  new FormControl('', [Validators.required, Validators.minLength(3)])
     });
   }
 
+  data: any;
+  result: any;
+  success: any;
+  err: any;
+  error: any;
+
+  onSendForm(): void {
 
 
+
+    if (this.contactForm.valid) {
+
+      this.contactForm.value
+      this.data = this.contactForm.value;
+
+      console.log(this.data)
+
+    }
+  }
 
 
 

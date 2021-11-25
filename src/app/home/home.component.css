@@ -6,10 +6,8 @@
 }
 
 .card-date{
-    
     max-width: 310px;
     margin: 0 auto;
-
 }
 
 .separator{
@@ -24,7 +22,6 @@ input{
 ::placeholder { color: white; }
 .form-select{
     background-color: #fff0;
-
     border: none;
     font-weight: 700;
     outline: none;
@@ -35,4 +32,10 @@ input{
 	border: none;
     font-weight: 700;
     outline: none;
+    text-align: center;
+}
+
+
+input:-internal-autofill-selected{
+    background-color: #e9e9e900 !important;
 }

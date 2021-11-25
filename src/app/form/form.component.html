@@ -1,46 +1,81 @@
 <section class="bg-tona flex">
     <div class="container">
 
-        <app-header></app-header>
+        <app-header-form></app-header-form>
 
-        <div class="row flex pos">
-            <div class="col-md-2">
-                <img class="img-pos hiddenVm" src="../../assets/img/botellaForm.png" alt="">
+        <div class="row flex">
+            <div class="col-md-4">
+                <img class="w-100 hiddenVm" src="../../assets/img/botella.png" alt="">
             </div>
-            <div class="col-12 col-md-9">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="center"> 
-                            <br>
-                            <h3 class="white">LLENA EL FORMULARIO</h3>
-                            <br><br>
-                          
-                            <div class="row">
-                                <div class="col-md-12 mb-3">
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+
+            <div class="col-12 col-md-8">
+                <form [formGroup]="contactForm" (ngSubmit)="onSendForm()">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="center"> 
+                            
+                                <h3 class="white">LLENA EL FORMULARIO</h3>
+                               <br>
+                              
+                                <div class="row">
+
+                                    <div class="col-md-12 mb-3">
+                                        <input type="text" class="form-control" formControlName="Nombre"  placeholder="Nombre*">
+                                    </div>
+
+                                    <div class="col-md-12 mb-3">
+                                        <input type="text" class="form-control" formControlName="Apellido"  placeholder="Apellido*">
+                                    </div>
+
+                                    <div class="col-md-12 mb-3">
+                                        
+                                        <input type="text" class="form-control"  formControlName="Email" placeholder="Correo electrónico*">
+
+                                        <!-- <div class="alert-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)">
+                                          <div class="container-error-message" *ngIf="Email.errors.required">Correo es requerido.</div>
+                                          <div class="container-error-message"
+                                            *ngIf="(Email.dirty || Email.touched) && Email.invalid && Email.errors.pattern">
+                                            Correo no válido.
+                                          </div>
+                                        </div> -->
+
+
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" formControlName="telefono" placeholder="Teléfono*" minlength="8"  maxlength="8"
+                                        onKeypress="if(event.charCode >= 48 && event.charCode <= 57){return true;}return false;"/>
+                                      
+
+                                  
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+
+                                        <input type="text" class="form-control" formControlName="CUI" placeholder="No. Cédula*" minlength="14"  maxlength="14">
+                                  
+                                        <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">
+                                            <!-- <div class="container-error-message" *ngIf="CUI.errors.required || !CUI.errors.validarCedula">CUI es requerido.</div> -->
+                                            <!-- <div class="container-error-message" *ngIf="CUI.errors.minlength">Debe tener 14 caracteres.</div> -->
+                                            <!-- <div class="container-error-message" *ngIf="!CUI.errors.required && CUI.errors.validarCedula ">CUI incorrecto.</div> -->
+                                          </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 mb-3">
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo Electronico">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="No. Cedula">
-                                </div>
+    
+    
+    
+                                <br>
+                                <button class="btn btn-tona" [disabled]="!contactForm.valid"><b class="white">Enviar</b></button>
+                                
                             </div>
-
-
-
-                            <br><br>
-                            <button class="btn bg-orange"><b class="white">Enviar</b></button>
-                        
                         </div>
                     </div>
-                </div>
+                </form>
+                
             </div>
-            <div class="col-md-1"></div>
-            <app-footer></app-footer>
+
+            
+
+            <app-footer-info></app-footer-info>
         </div>
 
     </div>

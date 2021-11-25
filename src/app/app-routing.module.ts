@@ -6,6 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { FormComponent } from './form/form.component';
 
+
+
+
+
 const routes: Routes   = [
   { path: '', component: HomeComponent },
   { path: 'info', component: InfoComponent, canActivate: [GuardGuard] },
@@ -13,6 +17,9 @@ const routes: Routes   = [
   { path: '',   redirectTo: '/', pathMatch: 'full' }, 
   { path: '**', component: HomeComponent },  
 ];
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
