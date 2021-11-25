@@ -92,7 +92,7 @@ export class FormComponent implements OnInit {
     dialogConfig.disableClose = true;
     const dialogRef = this.dialog.open(ModalFormComponent, {
       data:{ code: codigo},
-      width: '70%',
+      width: '100%',
     });
   }
 

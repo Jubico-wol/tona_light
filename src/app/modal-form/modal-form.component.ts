@@ -18,7 +18,7 @@ export class ModalFormComponent implements OnInit {
   }
 
 
-  onNoClick(): void { this.dialogRef.close(); }
+  onNoClick(): void { this.dialogRef.close(this.router.navigate(['info'])); }
   closeModal() { this.dialogRef.close(this.router.navigate(['info'])); }
 
 
