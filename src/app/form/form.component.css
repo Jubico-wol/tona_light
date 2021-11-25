@@ -16,6 +16,10 @@
     padding: 1rem 3rem;
 }
 
+.form-check-label{
+    float: left;
+}
+
 @media (max-width: 1024px)
 and (max-height: 1366px) {
     .hiddenVm{
@@ -25,7 +29,7 @@ and (max-height: 1366px) {
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
     .pos{
         position: relative;
         top: 0;

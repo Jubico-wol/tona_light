@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
+import { ApiService } from '../service/api.service';
 import { Router } from '@angular/router';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalFormComponent } from '../modal-form/modal-form.component';
+import { ModalFormErrorComponent} from '../modal-form-error/modal-form-error.component';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -10,7 +12,7 @@ import { ModalFormComponent } from '../modal-form/modal-form.component';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { this.contactForm = this.createForm(); }
+  constructor(private _api: ApiService, public dialog: MatDialog) { this.contactForm = this.createForm(); }
 
   ngOnInit(): void {
   }
@@ -26,10 +28,14 @@ export class FormComponent implements OnInit {
   get Email()     { return this.contactForm.get('Email') as FormControl; }
   get telefono()  { return this.contactForm.get('telefono') as FormControl; }
   get CUI()       { return this.contactForm.get('CUI') as FormControl; }
+  get check()     { return this.contactForm.get('check') as FormControl; }
 
 
+  // this.loginForm = fb.group({
+  //   cb: [false, Validators.required],
+  // //cb: ['',Validators.required] - this will also work.
 
-
+  // });
   createForm() {
     return new FormGroup({
       Nombre:     new FormControl('', [Validators.required, Validators.minLength(3)]),
@@ -37,6 +43,7 @@ export class FormComponent implements OnInit {
       Email:      new FormControl('', [Validators.required, Validators.minLength(5), Validators.pattern(this.emailPattern)]),
       CUI:        new FormControl('', [Validators.required, Validators.minLength(14), CuiValidator.validarCedula]),
       telefono:   new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(8), Validators.pattern(this.onlyNumbers)]),
+      check:      new FormControl('',[Validators.required])
     });
   }
 
@@ -45,25 +52,69 @@ export class FormComponent implements OnInit {
   success: any;
   err: any;
   error: any;
+  code:any;
+  checked = false;
+  terms:any;
 
   onSendForm(): void {
 
-
-
-    if (this.contactForm.valid) {
-
-      this.contactForm.value
-      this.data = this.contactForm.value;
-
-      console.log(this.data)
+    if(this.checked == false){
+      this.terms = false;
 
     }
+    if(this.checked == true){
+      this.terms = true;
+        if (this.contactForm.valid) {
+          this.contactForm.value
+          this.data = this.contactForm.value;
+          this._api.postForm(this.data).subscribe(data=>{
+            this.data = data;
+            this.error = this.data.result;
+            this.code = this.data.codigo
+            if(this.error){
+              this.modalError();
+            } else{ 
+              this.modal(this.code);
+            }
+          })
+        }
+    }
+
+  
+
+
   }
 
 
+  modal(obj:any){
+    let codigo = obj
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    const dialogRef = this.dialog.open(ModalFormComponent, {
+      data:{ code: codigo},
+      width: '70%',
+    });
+  }
 
 
+// modal(obj:any){
+//   let codigo = obj
+//   const dialogConfig = new MatDialogConfig();
+//   dialogConfig.disableClose = true;
+//   const dialogRef = this.dialog.open(ModalFormComponent, {
+//     data:{ code: codigo},
+//     width: '745px',
+//   });
+// }
 
+modalError(){
+
+  const dialogConfig = new MatDialogConfig();
+  dialogConfig.disableClose = true;
+  const dialogRef = this.dialog.open(ModalFormErrorComponent, {
+    width: '600px',
+  });
+}
 
 
 

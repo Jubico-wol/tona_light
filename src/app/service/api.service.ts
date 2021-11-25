@@ -17,6 +17,12 @@ export class ApiService {
     return !!this.cookieService.get('ASkjfwuihJKFH');
   }
 
-  
+
+  postForm(obj:any){
+    let url = "https://solutionsomg.com/api/tonalight";
+    return this.http.post(url, obj);
+  }
+
+
 
 }

@@ -3,6 +3,8 @@
 
         <app-header-form></app-header-form>
 
+    
+
         <div class="row flex">
             <div class="col-md-4">
                 <img class="w-100 hiddenVm" src="../../assets/img/botella.png" alt="">
@@ -31,13 +33,14 @@
                                         
                                         <input type="text" class="form-control"  formControlName="Email" placeholder="Correo electrónico*">
 
-                                        <!-- <div class="alert-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)">
-                                          <div class="container-error-message" *ngIf="Email.errors.required">Correo es requerido.</div>
+                                        <div class="alert-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)">
+                                            Correo no válido.
+                                          <!-- <div class="container-error-message" *ngIf="Email.errors.required">Correo es requerido.</div>
                                           <div class="container-error-message"
                                             *ngIf="(Email.dirty || Email.touched) && Email.invalid && Email.errors.pattern">
                                             Correo no válido.
-                                          </div>
-                                        </div> -->
+                                          </div> -->
+                                        </div>
 
 
                                     </div>
@@ -45,7 +48,15 @@
                                     <div class="col-md-6 mb-3">
                                         <input type="text" class="form-control" formControlName="telefono" placeholder="Teléfono*" minlength="8"  maxlength="8"
                                         onKeypress="if(event.charCode >= 48 && event.charCode <= 57){return true;}return false;"/>
-                                      
+                                        <div class="alert-danger" *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)">
+                                            Teléfono es requerido
+                                            <!-- <div class="container-error-message" *ngIf="telefono.errors.required">
+                                              Telephone es requerido
+                                            </div>
+                                            <div class="container-error-message" *ngIf="telefono.errors.minlength">
+                                              Telefono debe tener 8 caracteres.
+                                            </div> -->
+                                          </div>
 
                                   
                                     </div>
@@ -54,13 +65,26 @@
                                         <input type="text" class="form-control" formControlName="CUI" placeholder="No. Cédula*" minlength="14"  maxlength="14">
                                   
                                         <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">
+                                            CUI es requerido.
                                             <!-- <div class="container-error-message" *ngIf="CUI.errors.required || !CUI.errors.validarCedula">CUI es requerido.</div> -->
                                             <!-- <div class="container-error-message" *ngIf="CUI.errors.minlength">Debe tener 14 caracteres.</div> -->
                                             <!-- <div class="container-error-message" *ngIf="!CUI.errors.required && CUI.errors.validarCedula ">CUI incorrecto.</div> -->
                                           </div>
                                     </div>
+
                                 </div>
     
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" [(ngModel)]="checked" formControlName="check">
+                                    <label class="form-check-label white" for="flexCheckDefault" >
+                                        <span class="white center" [hidden]="terms==false"> Acepto términos y condiciones</span>
+                                        <span *ngIf="terms == false" class="red center" [hidden]="terms==true"> Acepto términos y condiciones</span>
+                                    </label>
+                                    <div class="alert-danger" *ngIf="check.invalid && (check.dirty || check.touched)">
+                                        requiered
+                                    </div>
+                                  </div>
+
     
     
                                 <br>
@@ -68,6 +92,7 @@
                                 
                             </div>
                         </div>
+                        <span class="white center"> Campos con * obligatorios</span>
                     </div>
                 </form>
                 

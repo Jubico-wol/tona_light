@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Inject } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-modal-form',
   templateUrl: './modal-form.component.html',
@@ -7,15 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    public dialogRef: MatDialogRef<ModalFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) { }
 
   ngOnInit(): void {
   }
 
 
-
-
-
+  onNoClick(): void { this.dialogRef.close(); }
+  closeModal() { this.dialogRef.close(this.router.navigate(['info'])); }
 
 
 
@@ -26,3 +30,7 @@ export class ModalFormComponent implements OnInit {
 
 
 }
+export interface DialogData {
+  code: any;
+}
+

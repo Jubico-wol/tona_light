@@ -20,6 +20,7 @@ import { HeaderInfoComponent } from './header-info/header-info.component';
 import { FooterInfoComponent } from './footer-info/footer-info.component';
 import { ModalFormComponent } from './modal-form/modal-form.component';
 import { HeaderFormComponent } from './header-form/header-form.component';
+import { ModalFormErrorComponent } from './modal-form-error/modal-form-error.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { HeaderFormComponent } from './header-form/header-form.component';
     HeaderInfoComponent,
     FooterInfoComponent,
     ModalFormComponent,
-    HeaderFormComponent
+    HeaderFormComponent,
+    ModalFormErrorComponent
   ],
   imports: [
     BrowserModule,
