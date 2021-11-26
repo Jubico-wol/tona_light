@@ -4,7 +4,6 @@
         <app-header-form></app-header-form>
 
 
-
         <div class="row flex">
             <div class="col-12 col-md-5 hiddenVm">
                 <img class="w-100 w-min hiddenVm" src="../../assets/img/botella.png" alt="">
@@ -65,7 +64,7 @@
                                         <input type="text" class="form-control" formControlName="CUI" placeholder="No. Cédula*" minlength="14"  maxlength="14">
                                   
                                         <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">
-                                            CUI es requerido.
+                                            Cédula es requerida.
                                             <!-- <div class="container-error-message" *ngIf="CUI.errors.required || !CUI.errors.validarCedula">CUI es requerido.</div> -->
                                             <!-- <div class="container-error-message" *ngIf="CUI.errors.minlength">Debe tener 14 caracteres.</div> -->
                                             <!-- <div class="container-error-message" *ngIf="!CUI.errors.required && CUI.errors.validarCedula ">CUI incorrecto.</div> -->
