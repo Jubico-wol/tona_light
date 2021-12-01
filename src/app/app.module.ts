@@ -6,6 +6,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 // components
 
@@ -21,6 +22,7 @@ import { FooterInfoComponent } from './footer-info/footer-info.component';
 import { ModalFormComponent } from './modal-form/modal-form.component';
 import { HeaderFormComponent } from './header-form/header-form.component';
 import { ModalFormErrorComponent } from './modal-form-error/modal-form-error.component';
+import { MapComponent } from './map/map.component';
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { ModalFormErrorComponent } from './modal-form-error/modal-form-error.com
     FooterInfoComponent,
     ModalFormComponent,
     HeaderFormComponent,
-    ModalFormErrorComponent
+    ModalFormErrorComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { ModalFormErrorComponent } from './modal-form-error/modal-form-error.com
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

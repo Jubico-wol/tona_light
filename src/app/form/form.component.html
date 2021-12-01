@@ -21,16 +21,16 @@
                                 <div class="row">
 
                                     <div class="col-md-12 mb-3">
-                                        <input type="text" class="form-control" formControlName="Nombre"  placeholder="NOMBRE*">
+                                        <input type="text" class="form-control" formControlName="Nombre"  placeholder="NOMBRE*" onkeyup="javascript:this.value=this.value.toUpperCase();">
                                     </div>
 
                                     <div class="col-md-12 mb-3">
-                                        <input type="text" class="form-control" formControlName="Apellido"  placeholder="APELLIDO*">
+                                        <input type="text" class="form-control" formControlName="Apellido"  placeholder="APELLIDO*"  onkeyup="javascript:this.value=this.value.toUpperCase();">
                                     </div>
 
                                     <div class="col-md-12 mb-3">
                                         
-                                        <input type="text" class="form-control"  formControlName="Email" placeholder="CORREO ELECTRONICO*">
+                                        <input type="text" class="form-control"  formControlName="Email" placeholder="CORREO ELECTRONICO*"  onkeyup="javascript:this.value=this.value.toUpperCase();">
 
                                         <div class="alert-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)">
                                             Correo no válido.
@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="col-md-6 mb-3">
 
-                                        <input type="text" class="form-control" formControlName="CUI" placeholder="No. CÉDULA*" minlength="14"  maxlength="14">
+                                        <input type="text" class="form-control" formControlName="CUI" placeholder="No. CÉDULA*" minlength="14"  maxlength="14"  onkeyup="javascript:this.value=this.value.toUpperCase();">
                                   
                                         <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">
                                             Cédula es requerida.
