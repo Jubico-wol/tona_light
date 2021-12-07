@@ -10,6 +10,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .white{
       color: white;
   }
+
+  .white a { 
+      color: white !important;
+        text-decoration: none;
+    }
   .red{ color: red;}
   .bg-red{ background: red;}
 
