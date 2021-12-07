@@ -1,5 +1,17 @@
 [
-	{ "id":0,  "nombre":"Bocao" },
+	{ 
+		"id":0,  "nombre":"Bocao",
+	
+		"position": {
+			"lat": 40.4381311,
+			"lng": -3.8196233
+		  },
+		  "label": {
+			"color": "black",
+			"text": "Madrid"
+		  }
+	},
+	
 	{ "id":1,  "nombre":"Carazo" },
 	{ "id":2,  "nombre":"Chinandega" },
 	{ "id":3,  "nombre":"Chontales" },
@@ -15,5 +27,5 @@
 	{ "id":13, "nombre":"Matagalpa" },
 	{ "id":14, "nombre":"Nueva Segovia" },
 	{ "id":15, "nombre":"Río San Juan" },
-	{ "id":15, "nombre":"Rivas" }
+	{ "id":16, "nombre":"Rivas" }
 ]

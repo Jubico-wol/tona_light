@@ -1,0 +1,112 @@
+[
+    {  
+
+        "tiendaId":100,
+        "allTiendas":[
+            {
+                "id":0, "nombre":"Tienda1 Bocao",
+                "position": {
+                    "lat":  12.488643,
+                    "lng": -85.616253
+                  },
+                  "horarios": {
+                    "lu": "6:00 am 10:00 pm",
+                    "ma": "6:00 am 10:00 pm",
+                    "mi": "6:00 am 10:00 pm",
+                    "ju": "6:00 am 10:00 pm",
+                    "vi": "6:00 am 12:00 pm",
+                    "sa": "6:00 am 12:00 pm",
+                    "do": "6:00 am 10:00 pm"
+                  }
+            },
+            {
+                "id":1, "nombre":"Tienda2 Bocao",
+                "position": {
+                    "lat": 12.471186,
+                    "lng": -85.661804
+                     
+                  },
+                  "horarios": {
+                    "lu": "6:00 am 10:00 pm",
+                    "ma": "6:00 am 10:00 pm",
+                    "mi": "6:00 am 10:00 pm",
+                    "ju": "6:00 am 10:00 pm",
+                    "vi": "6:00 am 12:00 pm",
+                    "sa": "6:00 am 12:00 pm",
+                    "do": "6:00 am 10:00 pm"
+                  }
+            },
+            {
+                "id":2, "nombre":"Tienda3 Bocao",
+                "position": {
+                    "lat": 12.4667,
+                    "lng": -85.6667
+                  },
+                  "horarios": {
+                    "lu": "6:00 am 10:00 pm",
+                    "ma": "6:00 am 10:00 pm",
+                    "mi": "6:00 am 10:00 pm",
+                    "ju": "6:00 am 10:00 pm",
+                    "vi": "6:00 am 12:00 pm",
+                    "sa": "6:00 am 12:00 pm",
+                    "do": "6:00 am 10:00 pm"
+                  }
+            },
+            {
+                "id":3, "nombre":"Tienda4 Bocao",
+                "position": {
+                    "lat": 12.4667,
+                    "lng": -85.6667
+                  },
+                  "horarios": {
+                    "lu": "6:00 am 10:00 pm",
+                    "ma": "6:00 am 10:00 pm",
+                    "mi": "6:00 am 10:00 pm",
+                    "ju": "6:00 am 10:00 pm",
+                    "vi": "6:00 am 12:00 pm",
+                    "sa": "6:00 am 12:00 pm",
+                    "do": "6:00 am 10:00 pm"
+                  }
+            },
+            {
+                "id":4, "nombre":"Tienda4 Bocao",
+                "position": {
+                    "lat": 12.4667,
+                    "lng": -85.6667
+                  },
+                  "horarios": {
+                    "lu": "6:00 am 10:00 pm",
+                    "ma": "6:00 am 10:00 pm",
+                    "mi": "6:00 am 10:00 pm",
+                    "ju": "6:00 am 10:00 pm",
+                    "vi": "6:00 am 12:00 pm",
+                    "sa": "6:00 am 12:00 pm",
+                    "do": "6:00 am 10:00 pm"
+                  }
+            }
+        ]
+    },
+    {  
+        "tiendaId":112,
+        "allTiendas":[
+            {"id":0, "nombre":"TiendaX1"},
+            {"id":1, "nombre":"TiendaX2"},
+            {"id":2, "nombre":"TiendaX3"},
+            {"id":4, "nombre":"TiendaX4"},
+            {"id":5, "nombre":"TiendaX5"},
+            {"id":6, "nombre":"TiendaX6"}
+        ]
+    }
+    ,
+    {  
+        "tiendaId":2,
+        "allTiendas":[
+            {"id":0, "nombre":"TiendaXY1"},
+            {"id":1, "nombre":"TiendaXY2"},
+            {"id":2, "nombre":"TiendaXY3"},
+            {"id":4, "nombre":"TiendaXY4"},
+            {"id":5, "nombre":"TiendaXY5"},
+            {"id":6, "nombre":"TiendaXY6"}
+        ]
+    }
+]

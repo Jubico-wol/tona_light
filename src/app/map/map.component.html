@@ -1,13 +1,85 @@
 
 
 <div class="container">
-    <google-map [center]="position" [options]="options">
-        <map-marker
-        [position]="position"
 
-        ></map-marker>
-    </google-map>
+    <div class="row">
+      <div class="col-md-6">
+        <select class="form-select" (change)="onChange($event)">
+          <option selected>Departamento</option>
+          <option *ngFor="let d of dep" [value]="d.id">{{d.nombre}}</option>
+        
+        </select>
+      </div>
+      <br><br>
+      <div class="col-md-6">
+        <select class="form-select" (change)="onChange2($event)">
+          <option selected>Municipalidad</option>
+          <option *ngFor="let m of municipalidades" [value]="m.id">{{m.nombre}}</option>
+        </select>
+      </div>
+    </div>
+
+    <br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div>
+       
+
+
+        <table class="table" *ngIf="tent.length>0">
+          <thead>
+            <tr class="white">
+              <th scope="col">Tiendas</th>
+              <th scope="col">lunes</th>
+              <th scope="col">martes</th>
+              <th scope="col">miercoles</th>
+              <th scope="col">jueves</th>
+              <th scope="col">viernes</th>
+              <th scope="col">sabado</th>
+              <th scope="col">domingo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let t of tienda" class="white font-12 pointer" (click)="viewLocation(t.position)"> 
+              <th scope="row">{{t.nombre}} </th>
+              <td>{{t.horarios.lu}}</td>
+              <td>{{t.horarios.ma}}</td>
+              <td>{{t.horarios.mi}}</td>
+              <td>{{t.horarios.ju}}</td>
+              <td>{{t.horarios.vi}}</td>
+              <td>{{t.horarios.sa}}</td>
+              <td>{{t.horarios.do}}</td>
+            </tr>
+         
+          </tbody>
+        </table>
+
+
+
+      </div>
+    </div>
+  </div>
 </div>
 
+    <br>
 
-<div id="map"></div>
+    <!-- <google-map [center]="center" [zoom]="zoom">
+        <map-marker></map-marker>
+    </google-map> -->
+
+
+    <google-map [zoom]="zoom" [center]="center">
+
+      <map-marker *ngFor="let t of tienda" 
+        [position]="t.position" 
+        [position]="pos" 
+        >
+      </map-marker>
+    
+    </google-map>
+
+
+</div>
+
