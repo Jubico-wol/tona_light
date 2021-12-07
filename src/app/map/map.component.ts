@@ -69,6 +69,8 @@ viewLocation(val:any){
 //   console.log(poss)
 //   this.pos = poss
 // }) ;
+
+ 
 }
 
 
