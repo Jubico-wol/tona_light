@@ -23,6 +23,8 @@ import { ModalFormComponent } from './modal-form/modal-form.component';
 import { HeaderFormComponent } from './header-form/header-form.component';
 import { ModalFormErrorComponent } from './modal-form-error/modal-form-error.component';
 import { MapComponent } from './map/map.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { HeaderInicioComponent } from './header-inicio/header-inicio.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { MapComponent } from './map/map.component';
     ModalFormComponent,
     HeaderFormComponent,
     ModalFormErrorComponent,
-    MapComponent
+    MapComponent,
+    InicioComponent,
+    HeaderInicioComponent
   ],
   imports: [
     BrowserModule,

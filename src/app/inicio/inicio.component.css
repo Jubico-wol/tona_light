@@ -1,0 +1,41 @@
+.bg-tona{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-date{
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+input{
+    max-width: 80px;
+}
+::placeholder { color: white; }
+.form-select{
+    background-color: #fff0;
+    border: none;
+    font-weight: 700;
+    outline: none;
+}
+.fields {
+	background-color: #e9e9e900;
+    color: white;
+	border: none;
+    font-weight: 700;
+    outline: none;
+    text-align: center;
+}
+
+
+input:-internal-autofill-selected{
+    background-color: #e9e9e900 !important;
+}
