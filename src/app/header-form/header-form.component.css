@@ -1,4 +1,4 @@
-.padding{ padding: 5%;}
+.padding{ padding: 3%;}
 .social{ max-width: 50px;}
 .m-width{ max-width: 400px; }
 .img:hover{transform: translateY(0) scale(1.2);}
@@ -43,4 +43,13 @@
     animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+  }
+
+  .showVm{display: none;}
+
+  @media (max-width: 1024px){
+    .hiddenVm{
+      display: none;
+    }
+    .showVm{display: flex;}
   }
