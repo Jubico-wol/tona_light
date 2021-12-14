@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ApiService } from '../service/api.service';
 
 @Component({
   selector: 'app-tienda',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TiendaComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _api:ApiService, private router: Router, private route: ActivatedRoute) { }
 
+  tienda:any;
   ngOnInit(): void {
+    this.tienda = this.route.snapshot.paramMap.get('id');
+    console.log(this.tienda);
   }
+
+
+  exchangeCode(){
+
+   console.log(this.tienda)
+
+    // this._api.putCode()
+
+
+
+  }
+
+
 
 }

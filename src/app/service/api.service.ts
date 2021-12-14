@@ -23,6 +23,10 @@ export class ApiService {
     return this.http.post(url, obj);
   }
 
+  putCode(obj:any){
+    let url = "https://solutionsomg.com/api/tonalight";
+    return this.http.put(url,obj);
+  }
 
 
 }
