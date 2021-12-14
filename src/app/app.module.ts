@@ -27,6 +27,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { HeaderInicioComponent } from './header-inicio/header-inicio.component';
 import { TiendaComponent } from './tienda/tienda.component';
 import { ModalTiendaErrorComponent } from './modal-tienda-error/modal-tienda-error.component';
+import { ModalTiendaSuccessComponent } from './modal-tienda-success/modal-tienda-success.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { ModalTiendaErrorComponent } from './modal-tienda-error/modal-tienda-err
     InicioComponent,
     HeaderInicioComponent,
     TiendaComponent,
-    ModalTiendaErrorComponent
+    ModalTiendaErrorComponent,
+    ModalTiendaSuccessComponent
   ],
   imports: [
     BrowserModule,

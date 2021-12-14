@@ -3,7 +3,8 @@ import { FormControl, FormGroup, Validators, AbstractControl, ValidationErrors }
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../service/api.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { ModalTiendaErrorComponent } from '../modal-tienda-error/modal-tienda-error.component'
+import { ModalTiendaErrorComponent } from '../modal-tienda-error/modal-tienda-error.component';
+import { ModalTiendaSuccessComponent } from '../modal-tienda-success/modal-tienda-success.component';
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
@@ -16,7 +17,7 @@ export class TiendaComponent implements OnInit {
   tienda:any;
   ngOnInit(): void {
     this.tienda = this.route.snapshot.paramMap.get('id');
-    console.log(this.tienda);
+
   }
 
 
@@ -42,10 +43,10 @@ export class TiendaComponent implements OnInit {
   data:any;
   error:any;
   success:any;
-
+  result:any;
+  message:any;
   exchangeCode(){
 
-    console.log(this.tienda)
 
     if(this.contactForm.valid){
       this.data = this.contactForm.value;
@@ -53,13 +54,16 @@ export class TiendaComponent implements OnInit {
 
       console.log(obj)
       this._api.putCode(obj).subscribe(data=>{ 
-        console.log(data);
+  
         this.success = data;
-        this.error = this.success.result;
-        console.log(this.error);
+        this.result = this.success.success;
+        this.message = this.success.result;
+        
 
-        if(this.error){
-          this.modal(this.error)
+        if(this.result == true){
+          this.modalSuccess(this.message)
+        }else{
+          this.modalError(this.message)
         }
       
       
@@ -70,7 +74,7 @@ export class TiendaComponent implements OnInit {
 
 
 
-  modal(obj:any){
+  modalError(obj:any){
     let result = obj
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
@@ -80,6 +84,17 @@ export class TiendaComponent implements OnInit {
     });
   }
 
+
+
+  modalSuccess(obj:any){
+    let result = obj
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    const dialogRef = this.dialog.open(ModalTiendaSuccessComponent, {
+      data:{ result: result},
+      width: '600px'
+    });
+  }
 
 }
 
