@@ -26,6 +26,7 @@ import { MapComponent } from './map/map.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HeaderInicioComponent } from './header-inicio/header-inicio.component';
 import { TiendaComponent } from './tienda/tienda.component';
+import { ModalTiendaErrorComponent } from './modal-tienda-error/modal-tienda-error.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { TiendaComponent } from './tienda/tienda.component';
     MapComponent,
     InicioComponent,
     HeaderInicioComponent,
-    TiendaComponent
+    TiendaComponent,
+    ModalTiendaErrorComponent
   ],
   imports: [
     BrowserModule,

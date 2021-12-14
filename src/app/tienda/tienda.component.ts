@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../service/api.service';
-
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ModalTiendaErrorComponent } from '../modal-tienda-error/modal-tienda-error.component'
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
@@ -10,7 +11,7 @@ import { ApiService } from '../service/api.service';
 })
 export class TiendaComponent implements OnInit {
 
-  constructor( private _api:ApiService, private router: Router, private route: ActivatedRoute) { this.contactForm = this.createForm(); }
+  constructor( private _api:ApiService, private router: Router, private route: ActivatedRoute, public dialog: MatDialog) { this.contactForm = this.createForm(); }
 
   tienda:any;
   ngOnInit(): void {
@@ -40,30 +41,44 @@ export class TiendaComponent implements OnInit {
 
   data:any;
   error:any;
+  success:any;
 
   exchangeCode(){
 
-   
-    
-    console.log()
+    console.log(this.tienda)
 
-   console.log(this.tienda)
+    if(this.contactForm.valid){
+      this.data = this.contactForm.value;
+      let obj = { "CUI":this.data.CUI, "CODIGO":this.data.codigo, "TIENDA":this.tienda }
 
-if(this.contactForm.valid){
-  this.data = this.contactForm.value;
-  let obj = { "CUI":this.data.CUI, "CODIGO":this.data.codigo, "TIENDA":this.tienda }
+      console.log(obj)
+      this._api.putCode(obj).subscribe(data=>{ 
+        console.log(data);
+        this.success = data;
+        this.error = this.success.result;
+        console.log(this.error);
 
-  console.log(obj)
-  this._api.putCode(obj).subscribe(data=>{ console.log(data)});
-}
-
-
-    
-
-
+        if(this.error){
+          this.modal(this.error)
+        }
+      
+      
+      });
+    }
 
   }
 
+
+
+  modal(obj:any){
+    let result = obj
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    const dialogRef = this.dialog.open(ModalTiendaErrorComponent, {
+      data:{ result: result},
+      width: '600px'
+    });
+  }
 
 
 }
