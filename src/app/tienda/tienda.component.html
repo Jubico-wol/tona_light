@@ -7,22 +7,23 @@
                 
 
             <div class="col-12 col-md-8">
-                <form >
+                <form [formGroup]="contactForm" (ngSubmit)="exchangeCode()">
                     <div class="card">
                         <div class="card-body">
                             <div class="center"> 
                             
-                                <h3 class="white">Ingresa los datos para Canjear el liquido</h3>
+                                <h3 class="white">Ingresa los datos para canjear líquido</h3>
                                <br>
                               
                                 <div class="row">
 
                                     <div class="col-md-12 mb-3">
-                                        <input type="text" class="form-control"   placeholder="Cedula*">
+                                        <input type="text" class="form-control" formControlName="CUI" placeholder="CÉDULA*" minlength="14"  maxlength="14"  onkeyup="javascript:this.value=this.value.toUpperCase();">
+                                        <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">Cédula es requerida.</div>
                                     </div>
 
                                     <div class="col-md-12 mb-3">
-                                        <input type="text" class="form-control"   placeholder="Codigo*">
+                                        <input type="text" class="form-control" formControlName="codigo"  placeholder="Codigo*">
                                     </div>
 
                                     
@@ -31,7 +32,7 @@
     
     
                                 <br>
-                                <button class="btn btn-tona" (click)="exchangeCode()"><b class="white">Enviar</b></button>
+                                <button class="btn btn-tona" [disabled]="!contactForm.valid"><b class="white">Enviar</b></button>
                                 
                             </div>
                         </div>
