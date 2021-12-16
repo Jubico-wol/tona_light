@@ -13,7 +13,7 @@ import { TiendaComponent } from './tienda/tienda.component';
 
 const routes: Routes   = [
   { path: '', component: HomeComponent },
-  { path: 'inicio', component:InicioComponent},
+  // { path: 'inicio', component:InicioComponent},
   { path: 'info', component: InfoComponent, canActivate: [GuardGuard] },
   { path: 'form', component: FormComponent, canActivate: [GuardGuard] },
   { path: 'tienda/:id', component:TiendaComponent},

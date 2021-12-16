@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientXsrfModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
 import { GoogleMapsModule } from '@angular/google-maps';
 
@@ -59,7 +59,8 @@ import { ModalTiendaSuccessComponent } from './modal-tienda-success/modal-tienda
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    HttpClientXsrfModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
