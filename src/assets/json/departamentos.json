@@ -1,44 +1,11 @@
 [
 
-    { "id":0, "nombre":"Managua",
-		"position": {
-			"lat": 40.4381311,
-			"lng": -3.8196233
-		  },
-		  "label": {
-			"color": "black",
-			"text": "Madrid"
-		  }
-	},
-
-    { "id":1,  "nombre":"León" },
-
-	{ 
-		"id":2,  "nombre":"Bocao",
-	
-		"position": {
-			"lat": 40.4381311,
-			"lng": -3.8196233
-		  },
-		  "label": {
-			"color": "black",
-			"text": "Madrid"
-		  }
-	},
-
-    { "id":3, "nombre":"Matagalpa",
-        "position": {
-            "lat": 12.9167,
-            "lng": -85.9167
-        },
-        "label": {
-            "color": "black",
-            "text": "Madrid"
-        }
-     },
-
-     { "id":4,  "nombre":"Chinandega" }
-    
+{ "id":0, "nombre":"Managua" },
+{ "id":1,  "nombre":"León" },
+{ "id":2, "nombre":"Matagalpa" },
+{ "id":3,  "nombre":"Chinandega" },
+{ "id":4,  "nombre":"Carazo" },
+{ "id":5, "nombre":"Masaya" }
 
 
 

@@ -4,13 +4,40 @@
         "allMuni":[
             {"id":195, "nombre":"Ciudad Sandino"},
             {"id":197, "nombre":"Managua"},
-            {"id":205, "nombre":"Ciudad El Doral"}
+            {"id":205, "nombre":"Ciudad El Doral"},
+            {"id":203, "nombre":"Tipitapa"}
         ]
     },
     {  "departamento":"leon",
         "muniId":1,
         "allMuni":[
             {"id":181, "nombre":"León"}
+        ]
+    },
+    {  "departamento":"Matagalpa",
+        "muniId":2,
+        "allMuni":[
+            {"id":20, "nombre":"Chinandega"},
+            {"id":21, "nombre":"Chichigalpa"}
+        ]
+    },
+    {  "departamento":"Chinandega",
+        "muniId":3,
+        "allMuni":[
+            {"id":20, "nombre":"Chinandega"},
+            {"id":21, "nombre":"Chichigalpa"}
+        ]
+    },
+    {  "departamento":"Carazo",
+        "muniId":4,
+        "allMuni":[
+            {"id":30, "nombre":"El Rosario"}
+        ]
+    },
+    {  "departamento":"MASAYA",
+        "muniId":5,
+        "allMuni":[
+            {"id":40, "nombre":"masaya"}
         ]
     }
 ]

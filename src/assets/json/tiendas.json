@@ -183,8 +183,47 @@
               }
               
           ]
-      }
-      ,
+      },
+      {
+        "MUNICIPIO":"TIPITAPA",
+          "tiendaId":203,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Tipitapa 1",
+                "position": {
+                  "lat": 12.1979272,
+                  "lng": -86.0977031
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Tipitapa 2",
+                "position": {
+                  "lat": 12.1969278,
+                  "lng": -86.098754
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
       {
           "MUNICIPIO":"LEON",
           "tiendaId":181,
@@ -320,10 +359,129 @@
               },
               {
                 "id":0, 
+                "nombre":"Ciudad Sandino 2",
+                "position": {
+                  "lat":  12.1659123,
+                  "lng": -86.3622159
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Ciudad Sandino 3",
+                "position": {
+                  "lat":  12.1559671,
+                  "lng": -86.367854
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Ciudad Sandino 4",
+                "position": {
+                  "lat":  12.1654576,
+                  "lng": -86.3636659
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Ciudad Sandino 5",
+                "position": {
+                  "lat":  12.1501369,
+                  "lng": -86.3661973
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
                 "nombre":"Valle Sandino",
                 "position": {
                   "lat":  12.1774981,
                   "lng": -86.3644939
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Unidad de Proposito",
+                "position": {
+                  "lat":  12.1507524,
+                  "lng": -86.1887864
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Bello Amanecer",
+                "position": {
+                  "lat":  12.1479714,
+                  "lng": -86.3574066
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Mostatepe",
+                "position": {
+                  "lat":  12.0896034,
+                  "lng": -86.4174494
                 },
                 "horarios": {
                   "lu": "6:00 am 10:00 pm",
@@ -377,5 +535,115 @@
                 }
               }
           ]  
+      } ,
+      {
+        "MUNICIPIO":"Chinandega",
+          "tiendaId":20,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"El Viejo Chinandega",
+                "position": {
+                  "lat": 12.6276727,
+                  "lng": -87.1347185
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+      {
+        "MUNICIPIO":"Chichigalpa",
+          "tiendaId":21,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Chichigalpa",
+                "position": {
+                  "lat": 12.5713199,
+                  "lng": -87.0274984
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+      {
+        "MUNICIPIO":"EL ROSARIO",
+          "tiendaId":30,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Rosario",
+                "position": {
+                  "lat": 13.1018295,
+                  "lng": -86.3656337
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+      {
+        "MUNICIPIO":"MASAYA",
+          "tiendaId":40,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Bosco Monje Masaya",
+                "position": {
+                  "lat": 11.98043,
+                  "lng": -86.0831639
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Carretera Masaya 3 Km13",
+                "position": {
+                  "lat":12.0856072,
+                  "lng":-86.2393311
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
       }
+      
 ]
