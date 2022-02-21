@@ -64,7 +64,7 @@ pos:any;
 viewLocation(val:any){
   console.log(val)
   this.pos = val;
-  // this.zoom = 14
+  this.zoom = 14
 // navigator.geolocation.watchPosition(poss=>{
 //   console.log(poss)
 //   this.pos = poss

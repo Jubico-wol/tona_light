@@ -28,142 +28,142 @@
     {  
         "muniId":2,
         "allMuni":[
-            {"id":0, "nombre":"Chichigalpa"},
-            {"id":1, "nombre":"Chinandega"},
-            {"id":2, "nombre":"Cinco Pinos"},
-            {"id":3, "nombre":"Corinto"},
-            {"id":4, "nombre":"El Realejo"},
-            {"id":5, "nombre":"El Viejo"},
-            {"id":6, "nombre":"Posoltega"},
-            {"id":7, "nombre":"Puerto Morazán"},
-            {"id":8, "nombre":"San Francisco del Norte"},
-            {"id":9, "nombre":"San Pedro del Norte"},
-            {"id":10, "nombre":"Santo Tomás del Norte"},
-            {"id":11, "nombre":"Somotillo"},
-            {"id":12, "nombre":"Villanueva"}
+            {"id":114, "nombre":"Chichigalpa"},
+            {"id":115, "nombre":"Chinandega"},
+            {"id":116, "nombre":"Cinco Pinos"},
+            {"id":117, "nombre":"Corinto"},
+            {"id":118, "nombre":"El Realejo"},
+            {"id":119, "nombre":"El Viejo"},
+            {"id":120, "nombre":"Posoltega"},
+            {"id":121, "nombre":"Puerto Morazán"},
+            {"id":122, "nombre":"San Francisco del Norte"},
+            {"id":123, "nombre":"San Pedro del Norte"},
+            {"id":124, "nombre":"Santo Tomás del Norte"},
+            {"id":125, "nombre":"Somotillo"},
+            {"id":126, "nombre":"Villanueva"}
         ]
     },
     {  
         "muniId":3,
         "allMuni":[
-            {"id":0, "nombre":"Acoyapa"},
-            {"id":1, "nombre":"Comalapa"},
-            {"id":2, "nombre":"Cuapa"},
-            {"id":3, "nombre":"El Coral"},
-            {"id":4, "nombre":"Juigalpa"},
-            {"id":5, "nombre":"La Libertad"},
-            {"id":6, "nombre":"San Pedro de Lóvago"},
-            {"id":7, "nombre":"Santo Domingo"},
-            {"id":8, "nombre":"Santo Tomás"},
-            {"id":9, "nombre":"Villa Sandino"}
+            {"id":127, "nombre":"Acoyapa"},
+            {"id":128, "nombre":"Comalapa"},
+            {"id":129, "nombre":"Cuapa"},
+            {"id":130, "nombre":"El Coral"},
+            {"id":131, "nombre":"Juigalpa"},
+            {"id":132, "nombre":"La Libertad"},
+            {"id":133, "nombre":"San Pedro de Lóvago"},
+            {"id":134, "nombre":"Santo Domingo"},
+            {"id":135, "nombre":"Santo Tomás"},
+            {"id":136, "nombre":"Villa Sandino"}
         ]
     },
     {  
         "muniId":4,
         "allMuni":[
-            {"id":0, "nombre":"Bonanza"},
-            {"id":1, "nombre":"Mulukukú"},
-            {"id":2, "nombre":"Prinzapolka"},
-            {"id":3, "nombre":"Puerto Cabezas"},
-            {"id":4, "nombre":"Rosita"},
-            {"id":5, "nombre":"Siuna"},
-            {"id":6, "nombre":"Waslala"},
-            {"id":7, "nombre":"Waspán"}
+            {"id":137, "nombre":"Bonanza"},
+            {"id":138, "nombre":"Mulukukú"},
+            {"id":139, "nombre":"Prinzapolka"},
+            {"id":140, "nombre":"Puerto Cabezas"},
+            {"id":141, "nombre":"Rosita"},
+            {"id":142, "nombre":"Siuna"},
+            {"id":143, "nombre":"Waslala"},
+            {"id":144, "nombre":"Waspán"}
         ]
     },
     {  
         "muniId":5,
         "allMuni":[
-            {"id":0, "nombre":"Bluefields"},
-            {"id":1, "nombre":"Desembocadura de Río Grande"},
-            {"id":2, "nombre":"El Ayote"},
-            {"id":3, "nombre":"El Rama"},
-            {"id":4, "nombre":"El Tortuguero"},
-            {"id":5, "nombre":"Islas del Maíz"},
-            {"id":6, "nombre":"Kukra Hill"},
-            {"id":7, "nombre":"La Cruz de Río Grande"},
-            {"id":8, "nombre":"Laguna de Perlas"},
-            {"id":9, "nombre":"Muelle de los Bueyes"},
-            {"id":10, "nombre":"Nueva Guinea"},
-            {"id":11, "nombre":"Paiwas"}
+            {"id":145, "nombre":"Bluefields"},
+            {"id":146, "nombre":"Desembocadura de Río Grande"},
+            {"id":147, "nombre":"El Ayote"},
+            {"id":148, "nombre":"El Rama"},
+            {"id":149, "nombre":"El Tortuguero"},
+            {"id":150, "nombre":"Islas del Maíz"},
+            {"id":151, "nombre":"Kukra Hill"},
+            {"id":152, "nombre":"La Cruz de Río Grande"},
+            {"id":153, "nombre":"Laguna de Perlas"},
+            {"id":154, "nombre":"Muelle de los Bueyes"},
+            {"id":155, "nombre":"Nueva Guinea"},
+            {"id":156, "nombre":"Paiwas"}
         ]
     },
     {  
         "muniId":6,
         "allMuni":[
-            {"id":0, "nombre":"Condega"},
-            {"id":1, "nombre":"Estelí"},
-            {"id":2, "nombre":"La Trinidad"},
-            {"id":3, "nombre":"Pueblo Nuevo"},
-            {"id":4, "nombre":"El Tortuguero"},
-            {"id":5, "nombre":"San Juan de Limay"},
-            {"id":6, "nombre":"San Nicolás"}
+            {"id":157, "nombre":"Condega"},
+            {"id":158, "nombre":"Estelí"},
+            {"id":159, "nombre":"La Trinidad"},
+            {"id":160, "nombre":"Pueblo Nuevo"},
+            {"id":161, "nombre":"El Tortuguero"},
+            {"id":162, "nombre":"San Juan de Limay"},
+            {"id":163, "nombre":"San Nicolás"}
         ]
     },
     {  
         "muniId":7,
         "allMuni":[
-            {"id":0, "nombre":"Diriá"},
-            {"id":1, "nombre":"Diriomo"},
-            {"id":2, "nombre":"Granada"},
-            {"id":3, "nombre":"Nandaime"}
+            {"id":164, "nombre":"Diriá"},
+            {"id":165, "nombre":"Diriomo"},
+            {"id":166, "nombre":"Granada"},
+            {"id":167, "nombre":"Nandaime"}
         ]
     },
     {  
         "muniId":8,
         "allMuni":[
-            {"id":0, "nombre":"El Cuá"},
-            {"id":1, "nombre":"Jinotega"},
-            {"id":2, "nombre":"La Concordia"},
-            {"id":3, "nombre":"San José de Bocay"},
-            {"id":4, "nombre":"San Rafael del Norte"},
-            {"id":5, "nombre":"San Sebastián de Yalí"},
-            {"id":6, "nombre":"Santa María de Pantasma"},
-            {"id":7, "nombre":"Wiwilí de Jinotega"}
+            {"id":168, "nombre":"El Cuá"},
+            {"id":169, "nombre":"Jinotega"},
+            {"id":170, "nombre":"La Concordia"},
+            {"id":171, "nombre":"San José de Bocay"},
+            {"id":172, "nombre":"San Rafael del Norte"},
+            {"id":173, "nombre":"San Sebastián de Yalí"},
+            {"id":174, "nombre":"Santa María de Pantasma"},
+            {"id":175, "nombre":"Wiwilí de Jinotega"}
         ]
     },
     {  
         "muniId":9,
         "allMuni":[
-            {"id":0, "nombre":"Achuapa"},
-            {"id":1, "nombre":"El Jicaral"},
-            {"id":2, "nombre":"El Sauce"},
-            {"id":3, "nombre":"La Paz Centro"},
-            {"id":4, "nombre":"Larreynaga"},
-            {"id":5, "nombre":"León"},
-            {"id":6, "nombre":"Nagarote"},
-            {"id":7, "nombre":"Quezalguaque"},
-            {"id":8, "nombre":"Santa Rosa del Peñón"},
-            {"id":9, "nombre":"Telica"}
+            {"id":176, "nombre":"Achuapa"},
+            {"id":177, "nombre":"El Jicaral"},
+            {"id":178, "nombre":"El Sauce"},
+            {"id":179, "nombre":"La Paz Centro"},
+            {"id":180, "nombre":"Larreynaga"},
+            {"id":181, "nombre":"León"},
+            {"id":182, "nombre":"Nagarote"},
+            {"id":183, "nombre":"Quezalguaque"},
+            {"id":184, "nombre":"Santa Rosa del Peñón"},
+            {"id":185, "nombre":"Telica"}
         ]
     },
     {  
         "muniId":10,
         "allMuni":[
-            {"id":0, "nombre":"Las Sabanas"},
-            {"id":1, "nombre":"Palacagüina"},
-            {"id":2, "nombre":"San José de Cusmapa"},
-            {"id":3, "nombre":"San Juan de Río Coco"},
-            {"id":4, "nombre":"San Lucas"},
-            {"id":5, "nombre":"Somoto"},
-            {"id":6, "nombre":"Telpaneca"},
-            {"id":7, "nombre":"Totogalpa"},
-            {"id":8, "nombre":"Yalagüina"}
+            {"id":186, "nombre":"Las Sabanas"},
+            {"id":187, "nombre":"Palacagüina"},
+            {"id":188, "nombre":"San José de Cusmapa"},
+            {"id":189, "nombre":"San Juan de Río Coco"},
+            {"id":190, "nombre":"San Lucas"},
+            {"id":191, "nombre":"Somoto"},
+            {"id":192, "nombre":"Telpaneca"},
+            {"id":193, "nombre":"Totogalpa"},
+            {"id":194, "nombre":"Yalagüina"}
         ]
     },
     {  
         "muniId":11,
         "allMuni":[
-            {"id":0, "nombre":"Ciudad Sandino"},
-            {"id":1, "nombre":"El Crucero"},
-            {"id":2, "nombre":"Managua"},
-            {"id":3, "nombre":"Mateare"},
-            {"id":4, "nombre":"San Francisco Libre"},
-            {"id":5, "nombre":"San Rafael del Sur"},
-            {"id":6, "nombre":"Telpaneca"},
-            {"id":7, "nombre":"Ticuantepe"},
-            {"id":8, "nombre":"Tipitapa"},
-            {"id":9, "nombre":"Villa El Carmen"}
+            {"id":195, "nombre":"Ciudad Sandino"},
+            {"id":196, "nombre":"El Crucero"},
+            {"id":197, "nombre":"Managua"},
+            {"id":198, "nombre":"Mateare"},
+            {"id":199, "nombre":"San Francisco Libre"},
+            {"id":200, "nombre":"San Rafael del Sur"},
+            {"id":201, "nombre":"Telpaneca"},
+            {"id":202, "nombre":"Ticuantepe"},
+            {"id":203, "nombre":"Tipitapa"},
+            {"id":204, "nombre":"Villa El Carmen"}
         ]
     },
     {  

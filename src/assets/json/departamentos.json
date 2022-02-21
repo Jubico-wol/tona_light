@@ -22,7 +22,16 @@
 	{ "id":8,  "nombre":"Jinotega" },
 	{ "id":9,  "nombre":"León" },
 	{ "id":10, "nombre":"Madriz" },
-	{ "id":11, "nombre":"Managua" },
+	{ "id":11, "nombre":"Managua",
+		"position": {
+			"lat": 40.4381311,
+			"lng": -3.8196233
+		  },
+		  "label": {
+			"color": "black",
+			"text": "Madrid"
+		  }
+	},
 	{ "id":12, "nombre":"Masaya" },
 	{ "id":13, "nombre":"Matagalpa" },
 	{ "id":14, "nombre":"Nueva Segovia" },
