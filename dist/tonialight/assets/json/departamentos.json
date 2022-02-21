@@ -1,6 +1,20 @@
 [
+
+    { "id":0, "nombre":"Managua",
+		"position": {
+			"lat": 40.4381311,
+			"lng": -3.8196233
+		  },
+		  "label": {
+			"color": "black",
+			"text": "Madrid"
+		  }
+	},
+
+    { "id":1,  "nombre":"León" },
+
 	{ 
-		"id":0,  "nombre":"Bocao",
+		"id":2,  "nombre":"Bocao",
 	
 		"position": {
 			"lat": 40.4381311,
@@ -11,21 +25,23 @@
 			"text": "Madrid"
 		  }
 	},
-	
-	{ "id":1,  "nombre":"Carazo" },
-	{ "id":2,  "nombre":"Chinandega" },
-	{ "id":3,  "nombre":"Chontales" },
-	{ "id":4,  "nombre":"Costa Caribe Norte" },
-	{ "id":5,  "nombre":"Costa Caribe Sur" },
-	{ "id":6,  "nombre":"Estelí" },
-	{ "id":7,  "nombre":"Granada" },
-	{ "id":8,  "nombre":"Jinotega" },
-	{ "id":9,  "nombre":"León" },
-	{ "id":10, "nombre":"Madriz" },
-	{ "id":11, "nombre":"Managua" },
-	{ "id":12, "nombre":"Masaya" },
-	{ "id":13, "nombre":"Matagalpa" },
-	{ "id":14, "nombre":"Nueva Segovia" },
-	{ "id":15, "nombre":"Río San Juan" },
-	{ "id":16, "nombre":"Rivas" }
+
+    { "id":3, "nombre":"Matagalpa",
+        "position": {
+            "lat": 12.9167,
+            "lng": -85.9167
+        },
+        "label": {
+            "color": "black",
+            "text": "Madrid"
+        }
+     },
+
+     { "id":4,  "nombre":"Chinandega" }
+    
+
+
+
+
+
 ]

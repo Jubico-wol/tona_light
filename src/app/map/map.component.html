@@ -22,7 +22,7 @@
     <br>
 
 <div class="container">
-  <div class="row">
+  <div class="row table-content" *ngIf="showTable">
     <div class="col-md-12">
       <div>
        
@@ -72,11 +72,7 @@
 
     <google-map [zoom]="zoom" [center]="center">
 
-      <map-marker *ngFor="let t of tienda" 
-        [position]="t.position" 
-        [position]="pos" 
-        >
-      </map-marker>
+      <map-marker *ngFor="let t of tienda" [position]="pos"> </map-marker>
     
     </google-map>
 

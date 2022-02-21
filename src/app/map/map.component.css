@@ -1,3 +1,9 @@
 ::ng-deep .map-container{ width: 100% !important;}
 
 .font-12{ font-size: 12px;}
+
+.table-content{
+    max-height: 226px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
