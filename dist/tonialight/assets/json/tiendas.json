@@ -162,14 +162,234 @@
                   "sa": "6:00 am 12:00 pm",
                   "do": "6:00 am 10:00 pm"
                 }
-              }
-              ,
+              },
               {
                 "id":0, 
                 "nombre":"Mayoreo del Norte",
                 "position": {
                   "lat":  12.1391362,
                   "lng": -86.1983519
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"León  San Felipe",
+                "position": {
+                  "lat":  12.4386956,
+                  "lng": -86.8828806
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"León los poeta",
+                "position": {
+                  "lat":  12.4387217,
+                  "lng":  -86.8894467
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Carretera Sur",
+                "position": {
+                  "lat":  12.089221,
+                  "lng":  -86.3123784
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Avenida Real",
+                "position": {
+                  "lat":  11.9709757,
+                  "lng":  -86.097119
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Paseo Ecuestre",
+                "position": {
+                  "lat":  12.0982347,
+                  "lng":  -86.2298066
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Colonia Xolotlán",
+                "position": {
+                  "lat":  12.1095147,
+                  "lng":  -86.2969339
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Las 3F",
+                "position": {
+                  "lat":  12.100108,
+                  "lng":  -86.2401882
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Monseñor Lezcano 2",
+                "position": {
+                  "lat":  12.1488278,
+                  "lng":  -86.2948005
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Monseñor Lezcano 3",
+                "position": {
+                  "lat":  12.1478535,
+                  "lng":  -86.2955748
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"La Primavera",
+                "position": {
+                  "lat":  12.1555816,
+                  "lng":  -86.2220917
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Miguel Gutierrez",
+                "position": {
+                  "lat":  12.141066,
+                  "lng":  -86.218107
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Waspan Sur",
+                "position": {
+                  "lat":  12.1397055,
+                  "lng":  -86.2123514
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"9 de Junio 2",
+                "position": {
+                  "lat":  12.1347247,
+                  "lng":  -86.2170586
                 },
                 "horarios": {
                   "lu": "6:00 am 10:00 pm",
@@ -211,6 +431,29 @@
                 "position": {
                   "lat": 12.1969278,
                   "lng": -86.098754
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+      {
+        "MUNICIPIO":"TICUANTEPE",
+          "tiendaId":203,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Ticuantepe",
+                "position": {
+                  "lat": 12.023982,
+                  "lng": -86.2088936
                 },
                 "horarios": {
                   "lu": "6:00 am 10:00 pm",
@@ -334,8 +577,7 @@
                 }
               }
           ]
-      }
-      ,
+      },
       {
         "MUNICIPIO":"CD Sandino",
           "tiendaId":195,
@@ -494,8 +736,7 @@
                 }
               }
           ]  
-      }
-      ,
+      },
       {
         "MUNICIPIO":"CD El Doral",
           "tiendaId":205,
@@ -535,7 +776,7 @@
                 }
               }
           ]  
-      } ,
+      },
       {
         "MUNICIPIO":"Chinandega",
           "tiendaId":20,
@@ -569,6 +810,61 @@
                 "position": {
                   "lat": 12.5713199,
                   "lng": -87.0274984
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+      {
+        "MUNICIPIO":"MATAGALPA",
+          "tiendaId":21,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Matagalpa Darío",
+                "position": {
+                  "lat": 12.9216377,
+                  "lng": -85.9217012
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }, {
+                "id":0, 
+                "nombre":"Guanuca",
+                "position": {
+                  "lat": 12.9303365,
+                  "lng": -85.9173798
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }, {
+                "id":0, 
+                "nombre":"Matagalpa Progreso",
+                "position": {
+                  "lat": 12.9210676,
+                  "lng": -85.9234174
                 },
                 "horarios": {
                   "lu": "6:00 am 10:00 pm",
@@ -642,8 +938,159 @@
                   "sa": "6:00 am 12:00 pm",
                   "do": "6:00 am 10:00 pm"
                 }
+              },
+              {
+                "id":0, 
+                "nombre":"El Calvario",
+                "position": {
+                  "lat":11.9767345,
+                  "lng":-86.0939026
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"La Estación Masaya",
+                "position": {
+                  "lat":11.9805516,
+                  "lng":-86.0987961
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Carretera Masaya 2",
+                "position": {
+                  "lat":12.0479534,
+                  "lng":-86.231212
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Monte Cielo",
+                "position": {
+                  "lat":12.0643068,
+                  "lng":-86.20381
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+      {
+        "MUNICIPIO":"SAN JUAN DEL SUR",
+          "tiendaId":70,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":" San Juan del Sur",
+                "position": {
+                  "lat":  11.2543639,
+                  "lng":  -85.8717446
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":" San Juan del Sur 2",
+                "position": {
+                  "lat": 11.2531704,
+                  "lng":  -85.8733364
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+      {
+        "MUNICIPIO":"GRANADA",
+          "tiendaId":80,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Granada",
+                "position": {
+                  "lat":  11.9295112,
+                  "lng":  -85.9557371
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              },
+              {
+                "id":0, 
+                "nombre":"Granada 2",
+                "position": {
+                  "lat": 11.9295112,
+                  "lng": -85.9557371
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
               }
           ]  
       }
+
+
+
       
 ]
