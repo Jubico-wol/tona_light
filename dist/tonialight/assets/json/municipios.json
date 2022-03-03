@@ -6,7 +6,8 @@
             {"id":197, "nombre":"Managua"},
             {"id":205, "nombre":"Ciudad El Doral"},
             {"id":203, "nombre":"Tipitapa"},
-            {"id":204, "nombre":"Ticuantepe"}
+            {"id":204, "nombre":"Ticuantepe"},
+            {"id":206, "nombre":"Estelí"}
         ]
     },
     {  "departamento":"leon",

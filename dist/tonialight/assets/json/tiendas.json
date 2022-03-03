@@ -401,9 +401,469 @@
                   "do": "6:00 am 10:00 pm"
                 }
               }
-              
+              ,
+              {
+                "id":0, 
+                "nombre":"Salud Integral",
+                "position": {
+                  "lat":  12.1435907,
+                  "lng":  -86.3015638
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Morazan",
+                "position": {
+                  "lat":  12.1575481,
+                  "lng":  -86.3066348
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"El Cortijo",
+                "position": {
+                  "lat":  12.1511893,
+                  "lng":  -86.3052636
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"La Racachaca",
+                "position": {
+                  "lat":  12.137686,
+                  "lng":  -86.2937749
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Miraflores",
+                "position": {
+                  "lat":  12.1454505,
+                  "lng":  -86.3018851
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Monseñor Lezcano",
+                "position": {
+                  "lat":  12.1478535,
+                  "lng":  -86.2955748
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Primero de Mayo",
+                "position": {
+                  "lat":  12.1233558,
+                  "lng":  -86.2261305
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Primero de Mayo",
+                "position": {
+                  "lat":  12.1233558,
+                  "lng":  -86.2261305
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Jardinez de Veracruz",
+                "position": {
+                  "lat":  12.1217507,
+                  "lng":  -86.2305241
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"14 de Septiembre",
+                "position": {
+                  "lat":  12.1250778,
+                  "lng": -86.2333359
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Roberto Huembes",
+                "position": {
+                  "lat":  12.1218214,
+                  "lng": -86.2457016
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"El Dorado",
+                "position": {
+                  "lat":  12.1362972,
+                  "lng": -86.2527904
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Reparto Shick 2",
+                "position": {
+                  "lat":  12.1094227,
+                  "lng": -86.2258866
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Villa Austria",
+                "position": {
+                  "lat":  12.1331078,
+                  "lng": -86.2240568
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Villa Flor Norte",
+                "position": {
+                  "lat":  12.1241641,
+                  "lng": -86.2197204
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Sabana Grande",
+                "position": {
+                  "lat":  12.1229237,
+                  "lng": -86.1933945
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"America 3",
+                "position": {
+                  "lat":  12.1094227,
+                  "lng": -86.2258866
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Plaza Progreso",
+                "position": {
+                  "lat":  12.0552084,
+                  "lng": -86.2035206
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Plaza Madrigal",
+                "position": {
+                  "lat":  12.0574522,
+                  "lng": -86.1989584
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Plaza Montana - Veracruz 3",
+                "position": {
+                  "lat":  12.0851128,
+                  "lng": -86.1693711
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Plaza Gueguense",
+                "position": {
+                  "lat":  12.0885412,
+                  "lng": -86.3192908
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Uniplaza Las Colinas",
+                "position": {
+                  "lat":  12.1004425,
+                  "lng": -86.2397522
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Plaza Mayor",
+                "position": {
+                  "lat":  12.0918245,
+                  "lng": -86.2365352
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+              ,
+              {
+                "id":0, 
+                "nombre":"Esquipulas",
+                "position": {
+                  "lat":  12.0746702,
+                  "lng": -86.2188785
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+
+
           ]
       },
+
+
+      {
+        "MUNICIPIO":"ESTELI",
+          "tiendaId":206,
+          "allTiendas":[
+            {
+                "id":0, 
+                "nombre":"Estelí Centro",
+                "position": {
+                  "lat": 13.0923995,
+                  "lng": -86.3653788
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
+              }
+          ]  
+      },
+
+
       {
         "MUNICIPIO":"TIPITAPA",
           "tiendaId":203,
@@ -444,6 +904,8 @@
               }
           ]  
       },
+
+
       {
         "MUNICIPIO":"TICUANTEPE",
           "tiendaId":203,
@@ -467,6 +929,8 @@
               }
           ]  
       },
+
+
       {
           "MUNICIPIO":"LEON",
           "tiendaId":181,
@@ -578,6 +1042,8 @@
               }
           ]
       },
+
+
       {
         "MUNICIPIO":"CD Sandino",
           "tiendaId":195,
@@ -737,6 +1203,8 @@
               }
           ]  
       },
+
+
       {
         "MUNICIPIO":"CD El Doral",
           "tiendaId":205,
@@ -777,8 +1245,10 @@
               }
           ]  
       },
+
+
       {
-        "MUNICIPIO":"Chinandega",
+        "MUNICIPIO":"CHINANDEGA",
           "tiendaId":20,
           "allTiendas":[
             {
@@ -800,8 +1270,10 @@
               }
           ]  
       },
+
+
       {
-        "MUNICIPIO":"Chichigalpa",
+        "MUNICIPIO":"CHICHIGALPA",
           "tiendaId":21,
           "allTiendas":[
             {
@@ -823,6 +1295,8 @@
               }
           ]  
       },
+
+
       {
         "MUNICIPIO":"MATAGALPA",
           "tiendaId":21,
@@ -878,6 +1352,8 @@
               }
           ]  
       },
+
+
       {
         "MUNICIPIO":"EL ROSARIO",
           "tiendaId":30,
@@ -901,6 +1377,8 @@
               }
           ]  
       },
+
+
       {
         "MUNICIPIO":"MASAYA",
           "tiendaId":40,
@@ -1006,9 +1484,28 @@
                   "sa": "6:00 am 12:00 pm",
                   "do": "6:00 am 10:00 pm"
                 }
+              },
+              {
+                "id":0, 
+                "nombre":"Carretera Masaya 1 Km 12.8",
+                "position": {
+                  "lat":12.1028032,
+                  "lng":-86.2512405
+                },
+                "horarios": {
+                  "lu": "6:00 am 10:00 pm",
+                  "ma": "6:00 am 10:00 pm",
+                  "mi": "6:00 am 10:00 pm",
+                  "ju": "6:00 am 10:00 pm",
+                  "vi": "6:00 am 12:00 pm",
+                  "sa": "6:00 am 12:00 pm",
+                  "do": "6:00 am 10:00 pm"
+                }
               }
           ]  
       },
+
+
       {
         "MUNICIPIO":"SAN JUAN DEL SUR",
           "tiendaId":70,
@@ -1049,6 +1546,8 @@
               }
           ]  
       },
+
+
       {
         "MUNICIPIO":"GRANADA",
           "tiendaId":80,
