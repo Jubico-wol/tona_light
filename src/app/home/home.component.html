@@ -3,43 +3,14 @@
 
         <app-header></app-header>
 
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-12 col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="center"> 
-                            <h3 class="white">CONFIRMA TU EDAD</h3>
-                            <h5 class="white">INGRESA TUS DATOS</h5>
-                            <br><br>
-
-                            <div class="card card-date">
-                                <div class="d-flex justify-content-center">
-                                    <div class="p-2">
-                                        <input type="text" class="fields" placeholder="DD" [(ngModel)]="day" name="day" minlength="2"  maxlength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                                    </div><span class="white separator">|</span>
-                                    <div class="p-2">
-                                        <input type="text" class="fields" placeholder="MM" [(ngModel)]="month" name="month"minlength="2"  maxlength="2" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                                    </div><span class="white separator">|</span>
-                                    <div class="p-2">
-                                        <input type="text" class="fields" placeholder="AA" [(ngModel)]="year" name="year" minlength="4"  maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br><br>
-                            <button class="btn btn-tona" (click)="goToInfo()"><b class="white">ENVIAR</b></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2"></div>
+        <div class="row hiddenVm">
+            <img src="../../assets/img/end_promo.png" alt="">
         </div>
 
-
-       
-
-        <app-footer></app-footer>
+        <div class="row showVm">
+            <img src="../../assets/img/end_promo_mobile.png" alt="">
+        </div>
 
     </div>
 </section>
+
