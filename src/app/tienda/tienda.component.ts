@@ -16,7 +16,8 @@ export class TiendaComponent implements OnInit {
 
   tienda:any;
   ngOnInit(): void {
-    this.tienda = this.route.snapshot.paramMap.get('id');
+   window.location.href ='https://cervezatona.com';
+//    this.tienda = this.route.snapshot.paramMap.get('id');
 
   }
 
