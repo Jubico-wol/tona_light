@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../service/api.service';
@@ -16,8 +16,10 @@ export class TiendaComponent implements OnInit {
 
   tienda:any;
   ngOnInit(): void {
-   window.location.href ='https://cervezatona.com';
-//    this.tienda = this.route.snapshot.paramMap.get('id');
+  //  window.location.href ='https://cervezatona.com';
+   //this.tienda = this.route.snapshot.paramMap.get('id');
+    //console.log(this.tienda);
+    //console.log(this._api.getTokenC().subscribe(data=>{console.log(data)}));
 
   }
 
@@ -46,6 +48,9 @@ export class TiendaComponent implements OnInit {
   success:any;
   result:any;
   message:any;
+
+
+
   exchangeCode(){
 
 
@@ -72,9 +77,6 @@ export class TiendaComponent implements OnInit {
     }
 
   }
-
-
-
   modalError(obj:any){
     let result = obj
     const dialogConfig = new MatDialogConfig();
@@ -85,8 +87,6 @@ export class TiendaComponent implements OnInit {
     });
   }
 
-
-
   modalSuccess(obj:any){
     let result = obj
     const dialogConfig = new MatDialogConfig();
@@ -96,6 +96,19 @@ export class TiendaComponent implements OnInit {
       width: '600px'
     });
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../service/api.service';
+
 
 @Component({
   selector: 'app-header-form',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderFormComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private _api:ApiService) { }
+user:any
+show=false;
   ngOnInit(): void {
+
+    if (localStorage.length > 0) {
+        this.user = localStorage.getItem('user');
+        this.show = true;
+      } else {
+        this.show = false;
+      }    
   }
+
+
+
+  logOut(){
+    this._api.logOut();
+  }
+
 
 }

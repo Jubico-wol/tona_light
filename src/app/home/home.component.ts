@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private cookieService: CookieService, public dialog: MatDialog) {}
 
   ngOnInit(): void {
-    window.location.href ='https://cervezatona.com';
+    // window.location.href ='https://cervezatona.com';
   }
 
 
