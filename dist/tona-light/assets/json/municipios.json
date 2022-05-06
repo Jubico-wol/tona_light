@@ -1,0 +1,58 @@
+[
+    {  "departamento":"managua",
+        "muniId":0,
+        "allMuni":[
+            {"id":195, "nombre":"Ciudad Sandino"},
+            {"id":197, "nombre":"Managua"},
+            {"id":205, "nombre":"Ciudad El Doral"},
+            {"id":203, "nombre":"Tipitapa"},
+            {"id":204, "nombre":"Ticuantepe"},
+            {"id":206, "nombre":"Estelí"}
+        ]
+    },
+    {  "departamento":"leon",
+        "muniId":1,
+        "allMuni":[
+            {"id":181, "nombre":"León"}
+        ]
+    },
+    {  "departamento":"Matagalpa",
+        "muniId":2,
+        "allMuni":[
+            {"id":20, "nombre":"Chinandega"},
+            {"id":21, "nombre":"Chichigalpa"},
+            {"id":22, "nombre":"Matagalpa"}
+        ]
+    },
+    {  "departamento":"Chinandega",
+        "muniId":3,
+        "allMuni":[
+            {"id":20, "nombre":"Chinandega"},
+            {"id":21, "nombre":"Chichigalpa"}
+        ]
+    },
+    {  "departamento":"Carazo",
+        "muniId":4,
+        "allMuni":[
+            {"id":30, "nombre":"El Rosario"}
+        ]
+    },
+    {  "departamento":"MASAYA",
+        "muniId":5,
+        "allMuni":[
+            {"id":40, "nombre":"masaya"}
+        ]
+    },
+    {  "departamento":"RIVAS",
+        "muniId":6,
+        "allMuni":[
+            {"id":70, "nombre":"San Juan del Sur"}
+        ]
+    },
+    {  "departamento":"GRANADA",
+        "muniId":7,
+        "allMuni":[
+            {"id":80, "nombre":"Granada"}
+        ]
+    }
+]
