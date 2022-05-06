@@ -16,33 +16,19 @@ export class TloginComponent implements OnInit {
   public  codigoTienda:any;
   public  tiendaName:any;
   public  tienda:any
+  public code: any;
+  public messageError:any;
+  user:any;
+  id:any;
   data:any;
   error:any;
   show=false;
 
   ngOnInit(): void {
-
-   
     // this.codigoTienda = this.route.snapshot.paramMap.get('id');
     // console.log(this.codigoTienda);
-    
-
   }
 
-
-
-
-
-
-  public code: any;
-  public messageError:any;
-  user:any;
-
-
-
-
-
-  id:any;
 
   doLogin(){
    
@@ -53,8 +39,6 @@ export class TloginComponent implements OnInit {
         method: "GET",
         headers: { Authorization: `Bearer ${this.token.token}`}
       }
-
-
       this._api.doLogin(this.codigoTienda,this.code,header).subscribe((data)=>{ 
        // console.log(data);
         this.data = data;
@@ -69,11 +53,8 @@ export class TloginComponent implements OnInit {
         this.messageError = error.error;
       });
 
-
     });
 
-   
-      
   }
 
 

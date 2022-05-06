@@ -7,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientXsrfModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
 import { GoogleMapsModule } from '@angular/google-maps';
-
+import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 // components
 
 import { AppComponent } from './app.component';
@@ -17,8 +17,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { InfoComponent } from './info/info.component';
 import { FormComponent } from './form/form.component';
-import { HeaderInfoComponent } from './header-info/header-info.component';
-import { FooterInfoComponent } from './footer-info/footer-info.component';
+
+
 import { ModalFormComponent } from './modal-form/modal-form.component';
 import { HeaderFormComponent } from './header-form/header-form.component';
 import { ModalFormErrorComponent } from './modal-form-error/modal-form-error.component';
@@ -26,8 +26,6 @@ import { MapComponent } from './map/map.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HeaderInicioComponent } from './header-inicio/header-inicio.component';
 import { TiendaComponent } from './tienda/tienda.component';
-import { ModalTiendaErrorComponent } from './modal-tienda-error/modal-tienda-error.component';
-import { ModalTiendaSuccessComponent } from './modal-tienda-success/modal-tienda-success.component';
 import { TloginComponent } from './tlogin/tlogin.component';
 import { AlertComponent } from './alert/alert.component';
 
@@ -41,8 +39,6 @@ import { AlertComponent } from './alert/alert.component';
     FooterComponent,
     InfoComponent,
     FormComponent,
-    HeaderInfoComponent,
-    FooterInfoComponent,
     ModalFormComponent,
     HeaderFormComponent,
     ModalFormErrorComponent,
@@ -50,8 +46,6 @@ import { AlertComponent } from './alert/alert.component';
     InicioComponent,
     HeaderInicioComponent,
     TiendaComponent,
-    ModalTiendaErrorComponent,
-    ModalTiendaSuccessComponent,
     TloginComponent,
     AlertComponent
   ],
@@ -66,7 +60,8 @@ import { AlertComponent } from './alert/alert.component';
     GoogleMapsModule,
     HttpClientXsrfModule
   ],
-  providers: [CookieService],
+
+  providers: [CookieService,{useClass:HashLocationStrategy, provide: LocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

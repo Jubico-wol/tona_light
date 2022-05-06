@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../service/api.service';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { ModalTiendaErrorComponent } from '../modal-tienda-error/modal-tienda-error.component';
-import { ModalTiendaSuccessComponent } from '../modal-tienda-success/modal-tienda-success.component';
+
 
 import Swal from 'sweetalert2';
 @Component({
@@ -14,40 +12,15 @@ import Swal from 'sweetalert2';
 })
 export class TiendaComponent implements OnInit {
 
-  constructor( private _api:ApiService, private router: Router, private route: ActivatedRoute, public dialog: MatDialog) { }
-
+  constructor( private _api:ApiService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {}
 
-  data:any;
-  error:any;
-  success:any;
-  result:any;
-  message:any;
-
-  modalError(obj:any){
-    let result = obj
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    const dialogRef = this.dialog.open(ModalTiendaErrorComponent, {
-      data:{ result: result},
-      width: '600px'
-    });
-  }
-
-  modalSuccess(obj:any){
-    let result = obj
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    const dialogRef = this.dialog.open(ModalTiendaSuccessComponent, {
-      data:{ result: result},
-      width: '600px'
-    });
-  }
   private token:any;
   public  codigoTienda:any;
   public  tiendaName:any;
-  public  tienda:any
+  public  tienda:any;
+  data:any;
   cui:any;
   codigo:any;
   id:any;
@@ -55,67 +28,54 @@ export class TiendaComponent implements OnInit {
   status:any;
   err:any;
   msg:any;
+
   simpleAlert(msg:any){  
     Swal.fire(msg);  
   }  
-sendInfo(){
 
-  this.codigoTienda = localStorage.getItem('codigo_tienda');
+  sendInfo(){
 
-  this._api.getTokenC().subscribe((data)=>{  
-   
-    this.token= data
-    //console.log(this.token.token);
-   
-    let header = {
-      method: "POST",
-      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-      headers: { Authorization: `Bearer ${this.token.token}`}
-    }
+    this.codigoTienda = localStorage.getItem('codigo_tienda');
+    
+    this._api.getTokenC().subscribe((data)=>{  
+      this.token= data
 
-    let obje =
-      {
+      let header = {
+        method: "POST",
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        headers: { Authorization: `Bearer ${this.token.token}`}
+      }
+
+      let obje={
         cui:    this.cui,
         codigo: this.codigo,
         tienda: this.codigoTienda
       }
-    
-     this._api.sendCanje(obje,header).subscribe((data)=>{
       
-      //console.log(data);
+      this._api.sendCanje(obje,header).subscribe((data)=>{
+        
+        this.data = data;
+        this.status = this.data.staus
+        this.msg = this.data.msg
+        this.cui="";
+        this.codigo="";
+
+        if(this.status=200){
+          this.simpleAlert(this.msg)
+        }
     
-      this.data = data;
-      this.status = this.data.staus
-      this.msg = this.data.msg
-      this.cui="";
-      this.codigo="";
+        if(this.status==400){
+          this.simpleAlert(this.msg)
+        }
 
-      //console.log("mesaje"+this.msg)
-      if(this.status=200){
-        //this.modalSuccess(this.msg);
-        this.simpleAlert(this.msg)
-      }
-  
-      if(this.status==400){
-      //  this.modalSuccess(this.msg);
-     this.simpleAlert(this.msg)
-      }
-
-
-      
-     // this.modalSuccess(this.post)
-    },(error) => {
-     // console.log(error.error)
-      this.messageError = error.error.msg;
-      this.cui="";
-      this.codigo="";
-      this.simpleAlert(this.messageError)
+      },(error) => {
+        this.messageError = error.error.msg;
+        this.cui="";
+        this.codigo="";
+        this.simpleAlert(this.messageError)
+      });
     });
-
-
-  });
-
-}
+  }
 
 
 }

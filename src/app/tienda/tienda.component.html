@@ -3,9 +3,7 @@
 
         <app-header-form></app-header-form>
 
-        <div class="row flex">
-                
-
+        <div class="row flex">             
             <div class="col-12 col-md-8">
                 <form>
                     <div class="card">
@@ -21,22 +19,17 @@
                                         <input type="text" class="form-control" [(ngModel)]="codigo" name="codigo" placeholder="Código*">
                                     </div>                                
                                 </div>
-                           
                                 <br>
                                 <button class="btn btn-tona" (click)="sendInfo()"><b class="white">Enviar</b></button>
-                                <!-- <div class="center red">
-                                    <p>{{messageError}}</p>
-                                </div> -->
                             </div>
                         </div>
                     </div>
                 </form>
-                
             </div>
 
-            <app-footer-info></app-footer-info>
-        </div>
+            <app-footer></app-footer>
 
+        </div>
     </div>
 </section>
 
