@@ -39,46 +39,6 @@ export class TloginComponent implements OnInit {
   user:any;
 
 
-  getEmployee(){
-  
-  console.log(this.codigoTienda)
-  console.log(this.code);
- 
-
-    if(this.code){
-      this._api.getTokenC().subscribe((data)=>{  
-        this.token= data
-        let header = {
-          method: "GET",
-          headers: { Authorization: `Bearer ${this.token.token}`}
-        }
-        this._api.getEmployee(this.codigoTienda, this.code ,header).subscribe((data)=>{
-          console.log(data);
-          this.data = data;
-          console.log(this.data[0]);
-          this.user= this.data[0]
-           //localStorage.setItem('token',this.token.token);
-          localStorage.setItem('user',this.user.nombre+this.user.apellido);
-          localStorage.setItem('codigo_tienda', this.codigoTienda);
-          this.router.navigate(['canje']);
-        
-        },(error) => {
-          console.log(error.error)
-          this.messageError = error.error;
-        });
-    
-      });
-    }else{
-      this.messageError = "Código de empleado no encontrado";
-    }
-
-
-  }
-
-  goToForm(){
-   this.getEmployee();
-  }
-
 
 
 
@@ -88,7 +48,7 @@ export class TloginComponent implements OnInit {
    
     this._api.getTokenC().subscribe((data)=>{  
       this.token= data
-      console.log(this.token.token);
+     // console.log(this.token.token);
       let header = {
         method: "GET",
         headers: { Authorization: `Bearer ${this.token.token}`}
@@ -96,16 +56,16 @@ export class TloginComponent implements OnInit {
 
 
       this._api.doLogin(this.codigoTienda,this.code,header).subscribe((data)=>{ 
-        console.log(data);
+       // console.log(data);
         this.data = data;
-        console.log(this.data[0]);
+       // console.log(this.data[0]);
         this.tienda= this.data[0].nombre
         this.id = this.data[0].id
         localStorage.setItem('codigo_tienda',this.codigoTienda);
         localStorage.setItem('tienda',this.tienda);
         this.router.navigate(['canje']);
       },(error) => {
-        console.log(error.error)
+       // console.log(error.error)
         this.messageError = error.error;
       });
 

@@ -29,6 +29,7 @@ import { TiendaComponent } from './tienda/tienda.component';
 import { ModalTiendaErrorComponent } from './modal-tienda-error/modal-tienda-error.component';
 import { ModalTiendaSuccessComponent } from './modal-tienda-success/modal-tienda-success.component';
 import { TloginComponent } from './tlogin/tlogin.component';
+import { AlertComponent } from './alert/alert.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { TloginComponent } from './tlogin/tlogin.component';
     TiendaComponent,
     ModalTiendaErrorComponent,
     ModalTiendaSuccessComponent,
-    TloginComponent
+    TloginComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,

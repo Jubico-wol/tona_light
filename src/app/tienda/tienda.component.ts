@@ -1,12 +1,12 @@
-import { Component, HostListener, Input, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { AbstractControl, ValidationErrors } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../service/api.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalTiendaErrorComponent } from '../modal-tienda-error/modal-tienda-error.component';
 import { ModalTiendaSuccessComponent } from '../modal-tienda-success/modal-tienda-success.component';
-import { HttpHeaders } from '@angular/common/http';
 
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
@@ -55,7 +55,9 @@ export class TiendaComponent implements OnInit {
   status:any;
   err:any;
   msg:any;
-
+  simpleAlert(msg:any){  
+    Swal.fire(msg);  
+  }  
 sendInfo(){
 
   this.codigoTienda = localStorage.getItem('codigo_tienda');
@@ -63,7 +65,7 @@ sendInfo(){
   this._api.getTokenC().subscribe((data)=>{  
    
     this.token= data
-    console.log(this.token.token);
+    //console.log(this.token.token);
    
     let header = {
       method: "POST",
@@ -77,46 +79,37 @@ sendInfo(){
         codigo: this.codigo,
         tienda: this.codigoTienda
       }
-  
-      console.log(obje)
-
-
-    
     
      this._api.sendCanje(obje,header).subscribe((data)=>{
       
-      console.log(data);
-     
+      //console.log(data);
     
-     
-     
-     
-     
       this.data = data;
       this.status = this.data.staus
       this.msg = this.data.msg
       this.cui="";
       this.codigo="";
 
-
+      //console.log("mesaje"+this.msg)
       if(this.status=200){
-        this.modalSuccess(this.msg);
+        //this.modalSuccess(this.msg);
+        this.simpleAlert(this.msg)
       }
   
       if(this.status==400){
-        this.modalSuccess(this.msg);
+      //  this.modalSuccess(this.msg);
+     this.simpleAlert(this.msg)
       }
 
 
       
      // this.modalSuccess(this.post)
     },(error) => {
-      console.log(error.error)
+     // console.log(error.error)
       this.messageError = error.error.msg;
       this.cui="";
       this.codigo="";
-      console.log(this.messageError)
-      this.modalSuccess(this.messageError);
+      this.simpleAlert(this.messageError)
     });
 
 
