@@ -9,18 +9,21 @@
             <div class="col-12 col-md-8">
  
      
-                <div *ngIf="show==true" class="card">
+                <div class="card">
                     <div class="card-header center white">
                         <h3>BIENVENIDO A TIENDA</h3>
                         <h3>{{tiendaName}}</h3>
                     </div>
                     <div class="card-body">
                       <h5 class="card-title center white">INGRESA TU CÓDIGO DE EMPLEADO</h5>
+                      <div class="col-md-12 mb-3">
+                        <input type="text" class="form-control" [(ngModel)]="codigoTienda" name="tienda"  placeholder="Codigo de tienda*">
+                    </div>
                         <div class="col-md-12 mb-3">
-                            <input type="text" class="form-control" [(ngModel)]="code"  placeholder="Codigo*">
+                            <input type="text" class="form-control" [(ngModel)]="code" name="codigo" placeholder="Codigo*">
                         </div>
                         <div class="center">
-                            <button class="btn btn-tona" (click)="goToForm()">Ingresar</button>
+                            <button class="btn btn-tona" (click)="doLogin()">Ingresar</button>
                         </div>
                         <div class="center red">
                             <p>{{messageError}}</p>
@@ -29,11 +32,11 @@
                 </div>
 
 
-                <div *ngIf="error" class="card">
+                <!-- <div *ngIf="error" class="card">
                     <div class="card-body">
                       <h5 class="card-title center red">   {{error}}</h5>
                     </div>
-                </div>
+                </div> -->
 
                 
             </div>

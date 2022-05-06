@@ -15,6 +15,7 @@ export class TloginComponent implements OnInit {
   private token:any;
   public  codigoTienda:any;
   public  tiendaName:any;
+  public  tienda:any
   data:any;
   error:any;
   show=false;
@@ -22,42 +23,12 @@ export class TloginComponent implements OnInit {
   ngOnInit(): void {
 
    
-    this.codigoTienda = this.route.snapshot.paramMap.get('id');
-    console.log(this.codigoTienda);
+    // this.codigoTienda = this.route.snapshot.paramMap.get('id');
+    // console.log(this.codigoTienda);
     
-    this._api.getTokenC().subscribe((data)=>{  
-      this.token= data
-      console.log(this.token.token);
-      this.getTienda(this.token.token);
-    });
 
-    
   }
 
-
-
-
-
-  getTienda(token:any){ 
-
-      let header = {
-        method: "GET",
-        headers: { Authorization: `Bearer ${token}`}
-      }
- 
-      this._api.getTienda(this.codigoTienda,header).subscribe((data)=>{
-        console.log(data);
-        this.data = data;
-        this.tiendaName = this.data[0].nombre
-        console.log(this.tiendaName);
-        this.show=true;
-      },(error) => {
-        this.show=false;
-        console.log(error.error)
-        this.error = error.error;
-      });
-
-  }
 
 
 
@@ -101,17 +72,48 @@ export class TloginComponent implements OnInit {
       this.messageError = "Código de empleado no encontrado";
     }
 
- 
-
-
-
-    
-
 
   }
 
   goToForm(){
    this.getEmployee();
+  }
+
+
+
+
+  id:any;
+
+  doLogin(){
+   
+    this._api.getTokenC().subscribe((data)=>{  
+      this.token= data
+      console.log(this.token.token);
+      let header = {
+        method: "GET",
+        headers: { Authorization: `Bearer ${this.token.token}`}
+      }
+
+
+      this._api.doLogin(this.codigoTienda,this.code,header).subscribe((data)=>{ 
+        console.log(data);
+        this.data = data;
+        console.log(this.data[0]);
+        this.tienda= this.data[0].nombre
+        this.id = this.data[0].id
+        localStorage.setItem('codigo_tienda',this.codigoTienda);
+        localStorage.setItem('tienda',this.tienda);
+        this.router.navigate(['canje']);
+      },(error) => {
+        console.log(error.error)
+        this.messageError = error.error;
+      });
+
+
+    });
+
+   
+      
   }
 
 

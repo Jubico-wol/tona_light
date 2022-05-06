@@ -7,41 +7,32 @@
                 
 
             <div class="col-12 col-md-8">
-                <form [formGroup]="contactForm" (ngSubmit)="exchangeCode()">
+                <form>
                     <div class="card">
                         <div class="card-body">
                             <div class="center"> 
-                            
                                 <h3 class="white">Ingresa los datos para canjear líquido</h3>
-                               <br>
-                              
+                                <br>
                                 <div class="row">
-
                                     <div class="col-md-12 mb-3">
-                                        <input type="text" class="form-control" formControlName="CUI" placeholder="Identificación*" minlength="14"  maxlength="14"  onkeyup="javascript:this.value=this.value.toUpperCase();">
-                                        <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">Cédula es requerida.</div>
+                                        <input type="text" class="form-control" [(ngModel)]="cui" name="cui"  placeholder="Identificación*"  onkeyup="javascript:this.value=this.value.toUpperCase();">
                                     </div>
-
                                     <div class="col-md-12 mb-3">
-                                        <input type="text" class="form-control" formControlName="codigo"  placeholder="Código*">
-                                    </div>
-
-                                    
+                                        <input type="text" class="form-control" [(ngModel)]="codigo" name="codigo" placeholder="Código*">
+                                    </div>                                
                                 </div>
     
-    
-    
                                 <br>
-                                <button class="btn btn-tona" [disabled]="!contactForm.valid"><b class="white">Enviar</b></button>
-                                
+                                <button class="btn btn-tona" (click)="sendInfo()"><b class="white">Enviar</b></button>
+                                <div class="center red">
+                                    <p>{{messageError}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </form>
                 
             </div>
-
-            
 
             <app-footer-info></app-footer-info>
         </div>

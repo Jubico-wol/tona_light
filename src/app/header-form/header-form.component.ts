@@ -15,7 +15,7 @@ show=false;
   ngOnInit(): void {
 
     if (localStorage.length > 0) {
-        this.user = localStorage.getItem('user');
+        this.user = localStorage.getItem('tienda');
         this.show = true;
       } else {
         this.show = false;

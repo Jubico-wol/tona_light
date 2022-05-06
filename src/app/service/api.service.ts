@@ -36,39 +36,58 @@ export class ApiService {
 
   // implement tinedas
 
+
+  private url = "https://apiswolgroup.com/tona";
   private username="admin";
   private password="d9QlQ@g%Iser";
 
   getTokenC(){
-    let url = "http://54.151.5.188/tona/authenticate?username="+this.username+"&password="+this.password;
+    let url = this.url+"/authenticate?username="+this.username+"&password="+this.password;
     return this.http.get(url);
   }
 
+
+
+
   getTienda(codigo:any,token:any){
-    let url ="http://54.151.5.188/tona/tiendas?codigo=";
+    let url =this.url+"/tiendas?codigo=";
     return this.http.get(url+codigo,token);
   }
 
   getEmployee(tienda:any,code:any,token:any){
-    let url = "http://54.151.5.188/tona/empleados?tienda="+tienda+"&codigo="+code;
+    let url = this.url+"/empleados?tienda="+tienda+"&codigo="+code;
     return this.http.get(url,token);
   }
 
+  // sendCanje(cui:any,code:any,tienda:any,token:any){
+  //   let url = this.url+"/usuarios?cui="+cui+"&codigo="+code+"&tienda="+tienda;
+  //   return this.http.post(url,{"cui":cui,"codigo":code,"tienda":tienda},token);
+  // }
 
-  sendCanje(cui:any,code:any,tienda:any,token:any){
-    let url = "http://54.151.5.188/tona/usuarios?cui="+cui+"&codigo="+code+"&tienda="+tienda;
-    return this.http.post(url,token);
+
+  sendCanje(obj:any,token:any){
+    let url = this.url+"/usuarios";
+    return this.http.post(url,obj,token);
   }
+
+  //https://apiswolgroup.com/tona/usuarios?cui=2675583840101&codigo=432783&tienda=463728
+
+
+  doLogin(usuario:any, codigo:any, token:any){
+    let url = this.url+"/tiendas?usuario="+usuario+"&codigo="+codigo;
+    return this.http.get(url,token)
+  }
+
 
 
   logOut(){
-    let codigoTienda = localStorage.getItem('codigo_tienda');
+    //let codigoTienda = localStorage.getItem('codigo_tienda');
     localStorage.clear();
-    this.router.navigate(['tienda/'+codigoTienda]);
+    this.router.navigate(['tienda']);
   }
 
   //service for tiendas
-  isCodeIn(){ return !!localStorage.getItem('codigo_tienda');}
+  isCodeIn(){  return !!localStorage.getItem('codigo_tienda');}
   isCodeOut(){ return localStorage.getItem('codigo_tienda');}
 
 

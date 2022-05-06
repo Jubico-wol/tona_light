@@ -16,11 +16,11 @@ const routes: Routes   = [
   // { path: 'inicio', component:InicioComponent},
   // { path: 'info', component: InfoComponent, canActivate: [GuardGuard] },
   // { path: 'form', component: FormComponent, canActivate: [GuardGuard] },
-
-  { path: 'tienda/:id', component: TloginComponent , canActivate:[LoginGuard]},
+ 
+  { path: 'tienda', component: TloginComponent , canActivate:[LoginGuard]},
   { path: 'canje', component:TiendaComponent, canActivate: [GuardGuard]},
- //{ path: 'canje', component:TiendaComponent},
-  { path: '',   redirectTo: '/', pathMatch: 'full' }, 
+  //{ path: 'canje', component:TiendaComponent},
+  { path: '',   redirectTo: '/tienda', pathMatch: 'full' }, 
   { path: '**', component: TloginComponent }, 
 
   // { path: '**', component: HomeComponent },  

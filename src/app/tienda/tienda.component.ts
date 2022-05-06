@@ -5,6 +5,8 @@ import { ApiService } from '../service/api.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ModalTiendaErrorComponent } from '../modal-tienda-error/modal-tienda-error.component';
 import { ModalTiendaSuccessComponent } from '../modal-tienda-success/modal-tienda-success.component';
+import { HttpHeaders } from '@angular/common/http';
+
 @Component({
   selector: 'app-tienda',
   templateUrl: './tienda.component.html',
@@ -12,36 +14,10 @@ import { ModalTiendaSuccessComponent } from '../modal-tienda-success/modal-tiend
 })
 export class TiendaComponent implements OnInit {
 
-  constructor( private _api:ApiService, private router: Router, private route: ActivatedRoute, public dialog: MatDialog) { this.contactForm = this.createForm(); }
-
-  tienda:any;
-  ngOnInit(): void {
-  //  window.location.href ='https://cervezatona.com';
-   //this.tienda = this.route.snapshot.paramMap.get('id');
-    //console.log(this.tienda);
-    //console.log(this._api.getTokenC().subscribe(data=>{console.log(data)}));
-
-  }
+  constructor( private _api:ApiService, private router: Router, private route: ActivatedRoute, public dialog: MatDialog) { }
 
 
-  public contactForm: FormGroup;
-  private emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  private onlyNumbers: any = /[0-9\+\-\ ]/;
-
-
-
-  get CUI()       { return this.contactForm.get('CUI') as FormControl; }
-  get codigo()     { return this.contactForm.get('codigo') as FormControl; }
-
-
-  createForm() {
-    return new FormGroup({
-
-      CUI: new FormControl('', [Validators.required, Validators.minLength(14), CuiValidator.validarCedula]),
-      codigo: new FormControl('',[Validators.required])
-
-    });
-  }
+  ngOnInit(): void {}
 
   data:any;
   error:any;
@@ -49,34 +25,6 @@ export class TiendaComponent implements OnInit {
   result:any;
   message:any;
 
-
-
-  exchangeCode(){
-
-
-    if(this.contactForm.valid){
-      this.data = this.contactForm.value;
-      let obj = { "CUI":this.data.CUI, "CODIGO":this.data.codigo, "TIENDA":this.tienda }
-
-      console.log(obj)
-      this._api.putCode(obj).subscribe(data=>{ 
-  
-        this.success = data;
-        this.result = this.success.success;
-        this.message = this.success.result;
-        
-
-        if(this.result == true){
-          this.modalSuccess(this.message)
-        }else{
-          this.modalError(this.message)
-        }
-      
-      
-      });
-    }
-
-  }
   modalError(obj:any){
     let result = obj
     const dialogConfig = new MatDialogConfig();
@@ -96,22 +44,88 @@ export class TiendaComponent implements OnInit {
       width: '600px'
     });
   }
+  private token:any;
+  public  codigoTienda:any;
+  public  tiendaName:any;
+  public  tienda:any
+  cui:any;
+  codigo:any;
+  id:any;
+  messageError:any;
+  status:any;
+  err:any;
+  msg:any;
+
+sendInfo(){
+
+  this.codigoTienda = localStorage.getItem('codigo_tienda');
+
+  this._api.getTokenC().subscribe((data)=>{  
+   
+    this.token= data
+    console.log(this.token.token);
+   
+    let header = {
+      method: "POST",
+      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+      headers: { Authorization: `Bearer ${this.token.token}`}
+    }
+
+    let obje =
+      {
+        cui:    this.cui,
+        codigo: this.codigo,
+        tienda: this.codigoTienda
+      }
+  
+      console.log(obje)
 
 
+    
+    
+     this._api.sendCanje(obje,header).subscribe((data)=>{
+      
+      console.log(data);
+     
+    
+     
+     
+     
+     
+      this.data = data;
+      this.status = this.data.staus
+      this.msg = this.data.msg
+      this.cui="";
+      this.codigo="";
 
 
+      if(this.status=200){
+        this.modalSuccess(this.msg);
+      }
+  
+      if(this.status==400){
+        this.modalSuccess(this.msg);
+      }
 
 
+      
+     // this.modalSuccess(this.post)
+    },(error) => {
+      console.log(error.error)
+      this.messageError = error.error.msg;
+      this.cui="";
+      this.codigo="";
+      console.log(this.messageError)
+      this.modalSuccess(this.messageError);
+    });
 
 
-
-
-
-
-
+  });
 
 }
 
+
+}
 
 
 
